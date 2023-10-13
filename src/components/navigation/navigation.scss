@@ -3,7 +3,10 @@
   column-gap: 2rem;
   row-gap: 1rem;
 
-  text-transform: capitalize;
+  a {
+    text-transform: capitalize;
+    color: inherit;
+  }
 
   &.horizontal {
     align-items: center;

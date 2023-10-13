@@ -10,7 +10,7 @@ export default function MobileIcon() {
   return (
     <div
       onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}
-      className={mobileNavIsOpen ? 'mobile-nav ' : 'mobile-nav closed'}
+      className={mobileNavIsOpen ? 'mobile-icon ' : 'mobile-icon closed'}
     >
       <div></div>
       <div></div>

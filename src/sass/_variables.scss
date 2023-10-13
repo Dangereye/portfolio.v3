@@ -1,0 +1,21 @@
+// Devices
+$laptop-l: 1440px;
+$laptop: 1024px;
+$tablet: 820px;
+$mobile: 550px;
+
+// Page
+$page-width: 1620px;
+
+// Colours
+$heading-dark: hsl(222, 82%, 9%);
+$heading-light: hsl(0, 0%, 100%);
+$body-text-dark: rgba($heading-dark, 0.7);
+$body-text-light: rgba($heading-light, 0.7);
+
+$dark-color: hsl(217, 63%, 20%);
+$light-color: hsl(197, 76%, 57%);
+$grey-color: hsl(231, 33%, 96%);
+$dark-grey-color: hsl(202, 8%, 81%);
+$success-color: hsl(150, 82%, 31%);
+$error-color: hsl(348, 83%, 47%);

@@ -14,3 +14,9 @@
 a {
   text-decoration: none;
 }
+
+body {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  line-height: 1.618;
+  background-color: $dark-color;
+}

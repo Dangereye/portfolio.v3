@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function useAnimation(
-  id: string,
+  id: string | null,
   trigger: string,
   newOptions?: {},
   newTriggers?: {}
@@ -27,8 +27,7 @@ export default function useAnimation(
       stagger: 0,
       duration: 0.8,
       delay: 0,
-      ease: 'ease-out',
-      immediateRender: false,
+      ease: 'ease-in-out',
       ...newOptions,
     },
   };

@@ -18,18 +18,21 @@ export default function HeroSection() {
 
   useAnimation('.hero-animate-bg', '#hero', {
     y: 0,
-    scale: 1.3,
+    scale: 1.4,
     duration: 1,
+    immediateRender: false,
   });
 
   useAnimation('.hero-animate-up', '#hero', {
     duration: 1,
+    immediateRender: false,
   });
 
   useAnimation('.hero-animate-down', '#hero', {
     y: -300,
-    stagger: 0.05,
+    stagger: 0.1,
     ease: 'back.out(1.4)',
+    immediateRender: false,
   });
 
   return (

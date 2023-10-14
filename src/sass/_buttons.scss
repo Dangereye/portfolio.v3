@@ -1,0 +1,139 @@
+.btns {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+
+  &.tags {
+    gap: 1rem;
+  }
+}
+
+.btn {
+  font-family: 'Hind', sans-serif;
+  min-width: max-content;
+  padding: 1.6rem 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  border: none;
+  border-radius: 5rem;
+  background-color: transparent;
+
+  font-size: $body-text-size;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  transition: color $time, background-color $time, border-color $time;
+
+  cursor: pointer;
+
+  &__icon {
+    display: grid;
+    place-content: center;
+
+    &.spinner {
+      animation: spinner 2s linear infinite forwards;
+    }
+  }
+
+  &--large {
+    padding: 2.4rem 4.8rem;
+
+    @media (max-width: $laptop) {
+      padding: 2rem 4rem;
+    }
+    @media (max-width: $mobile) {
+      padding: 1.6rem 3.2rem;
+    }
+  }
+
+  &--disabled {
+    color: $heading-dark;
+    background-color: $grey-color;
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: $light-color;
+
+    &:focus {
+      @include primary-hover;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        @include primary-hover;
+      }
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $dark-grey-color;
+    color: $heading-dark;
+
+    &:focus {
+      @include secondary-hover;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        @include secondary-hover;
+      }
+    }
+  }
+
+  &--tertiary {
+    padding: 1rem;
+    color: $light-color;
+
+    &:focus {
+      @include tertiary-hover;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        @include tertiary-hover;
+      }
+    }
+  }
+
+  &--tag {
+    padding: 0.5rem 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-weight: 400;
+    color: #000;
+    background-color: $grey-color;
+
+    &:focus {
+      @include tag-hover;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        @include tag-hover;
+      }
+    }
+  }
+
+  &--toast {
+    padding: 0;
+    display: grid;
+    place-content: center;
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}

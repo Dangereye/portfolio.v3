@@ -1,0 +1,32 @@
+.feature {
+  .feature {
+    align-self: flex-end;
+
+    &__icon {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        width: 4rem;
+        height: 4rem;
+
+        @media (max-width: $mobile) {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+
+    &__text {
+      display: inline-block;
+      width: 10ch;
+      color: $body-text-light;
+      font-size: $small-text-size;
+      line-height: 1.3;
+    }
+  }
+}

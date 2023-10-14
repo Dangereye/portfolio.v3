@@ -6,8 +6,8 @@ import AppContextProvider from './context/appContext';
 
 // Components
 import Navbar from './components/navbar/Navbar';
-import LandingPage from './components/landing_page/LandingPage';
 import MobileNavigation from './components/mobile_navigation/MobileNavigation';
+import Main from './components/main/Main';
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
           <Navbar />
           <MobileNavigation />
           <Routes>
-            <Route path='/' element={<LandingPage />} />
+            <Route path='/' element={<Main />} />
           </Routes>
         </AppContextProvider>
       </BrowserRouter>

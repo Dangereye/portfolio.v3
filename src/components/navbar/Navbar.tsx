@@ -10,7 +10,7 @@ import { navigation } from '../../data/navigation';
 
 export default function Navbar() {
   return (
-    <div className='navbar'>
+    <header className='navbar'>
       <div className='container'>
         <Link to='/' className='logo'>
           Craig Puxty
@@ -18,6 +18,6 @@ export default function Navbar() {
         <Navigation array={navigation} />
         <MobileIcon />
       </div>
-    </div>
+    </header>
   );
 }

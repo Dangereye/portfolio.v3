@@ -1,0 +1,111 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  max-height: 1400px;
+  color: #fff;
+  background-color: $dark-color;
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  padding: 12rem 1rem;
+
+  @media (orientation: portrait) {
+    min-height: 667px;
+  }
+
+  @media (orientation: portrait) and (max-width: 300px) {
+    min-height: 695px;
+  }
+
+  @media (orientation: landscape) {
+    min-height: 915px;
+  }
+
+  .background {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    background-image: url('../../../public/images/hero/hero_bg_desktop.webp');
+    background-position: center right;
+    background-size: 1920px 1400px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1770px) {
+      background-position: center right -150px;
+    }
+
+    @media (orientation: landscape) {
+      background-size: cover;
+    }
+
+    @media (orientation: portrait) and (max-width: 1210px) {
+      opacity: 0.1;
+    }
+
+    @media (max-width: 950px) {
+      background-image: url('../../../public/images/hero/hero_bg_tablet.webp');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.1;
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: $page-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  .typography {
+    margin-top: 12rem;
+
+    @media (max-width: $mobile) {
+      margin-top: 6rem;
+    }
+  }
+
+  h1 {
+    line-height: 1;
+    color: $heading-light;
+    span {
+      color: $light-color;
+    }
+  }
+
+  .body-text {
+    max-width: 40ch;
+    color: $body-text-light;
+  }
+
+  a {
+    @media (hover: hover) {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    @media (max-width: $mobile) {
+      gap: 1.6rem;
+    }
+  }
+}

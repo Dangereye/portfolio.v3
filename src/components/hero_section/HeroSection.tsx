@@ -1,6 +1,9 @@
 // React router
 import { Link } from 'react-router-dom';
 
+// Animation hook
+import useAnimation from '../../hooks/useAnimation';
+
 // Components
 import Feature from './feature/Feature';
 
@@ -10,8 +13,27 @@ import CompassSvg from '../../svgs/Compass';
 import ScreenSvg from '../../svgs/Screens';
 
 export default function HeroSection() {
+  // Animation
+  // useAnimation(element id,trigger id,{animation options},{trigger options})
+
+  useAnimation('.hero-animate-bg', '#hero', {
+    y: 0,
+    scale: 1.3,
+    duration: 1,
+  });
+
+  useAnimation('.hero-animate-up', '#hero', {
+    duration: 1,
+  });
+
+  useAnimation('.hero-animate-down', '#hero', {
+    y: -300,
+    stagger: 0.05,
+    ease: 'back.out(1.4)',
+  });
+
   return (
-    <section className='hero-section' id='hero-section'>
+    <section className='hero-section' id='hero'>
       <div className='background hero-animate-bg'></div>
       <div className='container'>
         <div className='typography'>
@@ -39,8 +61,8 @@ export default function HeroSection() {
             performance-driven.
           </p>
           <div className='btns hero-animate-down'>
-            <Link to='/#projects'>
-              <a className='btn btn--primary btn--large'>Latest projects</a>
+            <Link to='/#projects' className='btn btn--primary btn--large'>
+              Latest projects
             </Link>
           </div>
         </div>

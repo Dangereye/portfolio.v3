@@ -11,6 +11,10 @@
 
   padding: 12rem 1rem;
 
+  @media (max-width: $mobile) {
+    padding: 4rem 1rem;
+  }
+
   @media (orientation: portrait) {
     min-height: 667px;
   }

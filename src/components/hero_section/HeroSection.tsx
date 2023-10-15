@@ -13,7 +13,6 @@ import CompassSvg from '../../svgs/Compass';
 import ScreenSvg from '../../svgs/Screens';
 
 export default function HeroSection() {
-  // Animation
   // useAnimation(element id,trigger id,{from options},{to options})
 
   useAnimation(

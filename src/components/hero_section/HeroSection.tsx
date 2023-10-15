@@ -36,7 +36,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className='hero-section' id='hero'>
+    <section className='section hero-section' id='hero'>
       <div className='background hero-animate-bg'></div>
       <div className='container'>
         <div className='typography'>

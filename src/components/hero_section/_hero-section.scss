@@ -5,13 +5,6 @@
   color: #fff;
   background-color: $dark-color;
 
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-
-  @include hoz-padding;
-  @include vert-padding;
-
   @media (orientation: portrait) {
     min-height: 667px;
   }

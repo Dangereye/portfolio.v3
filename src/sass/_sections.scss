@@ -1,0 +1,8 @@
+.section {
+  @include hoz-padding;
+  @include vert-padding;
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}

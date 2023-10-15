@@ -14,26 +14,44 @@ import ScreenSvg from '../../svgs/Screens';
 
 export default function HeroSection() {
   // Animation
-  // useAnimation(element id,trigger id,{animation options},{trigger options})
+  // useAnimation(element id,trigger id,{from options},{to options})
 
-  useAnimation('.hero-animate-bg', '#hero', {
-    y: 0,
-    scale: 1.4,
-    duration: 1,
-    immediateRender: false,
-  });
+  useAnimation(
+    '.hero-animate-bg',
+    '#hero',
+    {
+      scale: 1.4,
+      opacity: 0,
+    },
+    { scale: 1, opacity: 1, duration: 1, delay: 0.3, ease: 'power2.Out' }
+  );
 
-  useAnimation('.hero-animate-up', '#hero', {
-    duration: 1,
-    immediateRender: false,
-  });
+  useAnimation(
+    '.hero-animate-up',
+    '#hero',
+    {
+      y: 300,
+      opacity: 0,
+    },
+    { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: 'power2.Out' }
+  );
 
-  useAnimation('.hero-animate-down', '#hero', {
-    y: -300,
-    stagger: 0.1,
-    ease: 'back.out(1.4)',
-    immediateRender: false,
-  });
+  useAnimation(
+    '.hero-animate-down',
+    '#hero',
+    {
+      y: -300,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      delay: 1,
+      stagger: 0.05,
+      ease: 'power2.Out',
+    }
+  );
 
   return (
     <section className='section hero-section' id='hero'>

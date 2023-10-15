@@ -10,39 +10,26 @@ gsap.registerPlugin(ScrollTrigger);
 export default function useAnimation(
   id: string | null,
   trigger: string,
-  newOptions?: {},
-  newTriggers?: {}
+  from: {},
+  to: {}
 ) {
-  const animation = {
-    id,
-    options: {
-      scrollTrigger: {
-        trigger,
-        start: 'top center',
-        markers: false,
-        ...newTriggers,
-      },
-      opacity: 0,
-      y: 300,
-      stagger: 0,
-      duration: 0.8,
-      delay: 0,
-      ease: 'ease-in-out',
-      ...newOptions,
-    },
-  };
-
   useEffect(() => {
-    if (animation.id) {
-      const animate = gsap.from(animation.id, {
-        ...animation.options,
-      });
-
-      return () => {
-        animate.kill();
-      };
+    // useAnimation(element id,trigger id,{from options},{to options})
+    if (id) {
+      gsap.fromTo(
+        id,
+        {
+          ...from,
+          scrollTrigger: {
+            trigger,
+            start: 'top center',
+            markers: false,
+          },
+        },
+        { ...to }
+      );
     }
-  }, [id, trigger, newOptions, newTriggers, animation.id, animation.options]);
+  }, []);
 
-  return { animation };
+  return null;
 }

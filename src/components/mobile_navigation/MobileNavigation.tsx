@@ -17,12 +17,12 @@ export default function MobileNavigation() {
   const { mobileNavIsOpen, setMobileNavIsOpen } = useContext(AppContext);
   const id = mobileNavIsOpen ? '.mobile-menu-animate' : null;
 
-  useAnimation(id, '#mobile-menu', {
-    y: 0,
-    x: -300,
-    stagger: 0.06,
-    duration: 0.6,
-  });
+  // useAnimation(id, '#mobile-menu', {
+  //   y: 0,
+  //   x: -300,
+  //   stagger: 0.06,
+  //   duration: 0.6,
+  // });
 
   return (
     <div

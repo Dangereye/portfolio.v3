@@ -12,11 +12,11 @@ import MobileIcon from './mobile_icon/MobileIcon';
 import { navigation } from '../../data/navigation';
 
 export default function Navbar() {
-  useAnimation('.navbar-animate', '#navbar', {
-    y: -300,
-    duration: 1,
-    immediateRender: false,
-  });
+  // useAnimation('.navbar-animate', '#navbar', {
+  //   y: -300,
+  //   duration: 1,
+  //   immediateRender: false,
+  // });
 
   return (
     <header className='navbar navbar-animate' id='navbar'>

@@ -19,32 +19,33 @@ export default function AboutSection() {
 
   useAnimation('.about-animate-text', '#about', {
     y: -300,
-    delay: 0.4,
     stagger: 0.05,
     immediateRender: false,
     ease: 'back.out(1.4)',
   });
 
   return (
-    <section className='section section-about' id='about'>
+    <section className='section about-section' id='about'>
       <div className='container'>
         <div className='image about-animate'>
           <div className='image__wrapper'>
-            {/* <Image
-              src='/img/about/profile.webp'
-              width={500}
-              height={500}
-              layout='responsive'
-              alt='Craig Puxty'
-            /> */}
+            <img
+              src='/images/about/profile.webp'
+              alt='Craig puxty'
+              width='500px'
+              height='500px'
+            />
           </div>
         </div>
         <div className='text'>
-          <header className='article__header about-animate-text'>
-            {/* <ArticleHeading lead='About me' h2='Front-end developer' /> */}
-          </header>
+          <div className='heading heading--lead about-animate-text'>
+            About me
+          </div>
+          <h2 className='heading heading--h2 about-animate-text'>
+            Front-end developer
+          </h2>
           <p className='body-text body-text--lead about-animate-text'>
-            Specialising in React.js and Next.js development.
+            Specialising in React.js development.
           </p>
           <p className='body-text about-animate-text'>
             Hi! I'm Craig Puxty, a bespoke front-end developer from a small town

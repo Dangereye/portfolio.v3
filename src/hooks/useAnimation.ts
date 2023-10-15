@@ -14,19 +14,20 @@ export default function useAnimation(
   to: {}
 ) {
   useEffect(() => {
-    // useAnimation(element id,trigger id,{from options},{to options})
     if (id) {
       gsap.fromTo(
         id,
         {
           ...from,
+        },
+        {
+          ...to,
           scrollTrigger: {
             trigger,
             start: 'top center',
             markers: false,
           },
-        },
-        { ...to }
+        }
       );
     }
   }, [id]);

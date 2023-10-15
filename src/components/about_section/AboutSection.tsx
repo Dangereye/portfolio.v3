@@ -9,20 +9,33 @@ import useAnimation from '../../hooks/useAnimation';
 
 export default function AboutSection() {
   //   const { closeModal, downloadCV } = useModal();
-  // Animation
-  // useAnimation(element id,trigger id,{animation options},{trigger options})
-  //   useAnimation('.about-animate', '#about', {
-  //     duration: 1,
-  //     scale: 1.3,
-  //     immediateRender: false,
-  //   });
+  // useAnimation(element id,trigger id,{from options},{to options})
+  useAnimation(
+    '.about-animate',
+    '#about',
+    {
+      scale: 1.4,
+      opacity: 0,
+    },
+    { scale: 1, opacity: 1, duration: 1, delay: 0.5, ease: 'power2.Out' }
+  );
 
-  //   useAnimation('.about-animate-text', '#about', {
-  //     y: -300,
-  //     stagger: 0.05,
-  //     immediateRender: false,
-  //     ease: 'back.out(1.4)',
-  //   });
+  useAnimation(
+    '.about-animate-text',
+    '#about',
+    {
+      y: -300,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      delay: 1,
+      stagger: 0.05,
+      ease: 'power2.Out',
+    }
+  );
 
   return (
     <section className='section about-section' id='about'>

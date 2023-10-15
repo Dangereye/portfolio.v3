@@ -14,6 +14,7 @@
   box-sizing: border-box;
 }
 
+// Global Styles
 a {
   text-decoration: none;
   font-weight: 500;
@@ -27,8 +28,18 @@ a {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-size: clamp(1.6rem, 3vw, 2rem);
-  line-height: 1.618;
-  background-color: $dark-color;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  color: $body-text-dark;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $page-width;
 }

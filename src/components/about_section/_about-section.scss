@@ -1,0 +1,44 @@
+.about-section {
+  @include full-top-padding;
+  .article__header {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .heading--h2 {
+    color: $heading-dark;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+
+  .image {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__wrapper {
+      display: block;
+      width: 100%;
+      max-width: 55rem;
+      height: 100%;
+    }
+  }
+
+  .text {
+    flex: 1 1 40rem;
+  }
+
+  .body-text + .body-text {
+    margin-top: 2rem;
+  }
+
+  .btns {
+    @media (max-width: 355px) {
+      justify-content: center;
+    }
+  }
+}

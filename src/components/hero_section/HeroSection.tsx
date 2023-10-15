@@ -20,9 +20,8 @@ export default function HeroSection() {
     '#hero',
     {
       scale: 1.4,
-      opacity: 0,
     },
-    { scale: 1, opacity: 1, duration: 1, delay: 0.3, ease: 'power2.Out' }
+    { scale: 1, duration: 1.2, delay: 0.1, ease: 'power2.Out' }
   );
 
   useAnimation(

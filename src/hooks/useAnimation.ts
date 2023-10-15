@@ -29,7 +29,7 @@ export default function useAnimation(
         { ...to }
       );
     }
-  }, []);
+  }, [id]);
 
   return null;
 }

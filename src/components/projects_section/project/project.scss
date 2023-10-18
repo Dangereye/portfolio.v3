@@ -1,0 +1,139 @@
+.project {
+  @include vert-padding;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12rem;
+
+  @media (max-width: $laptop-l) {
+    gap: 8rem;
+  }
+
+  @media (max-width: $laptop) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: $mobile) {
+    gap: 4rem;
+  }
+
+  &.alt {
+    .project__details {
+      order: 1;
+      @media (max-width: $laptop) {
+        order: 2;
+      }
+    }
+    .project__img {
+      order: 2;
+      @media (max-width: $laptop) {
+        order: 1;
+      }
+    }
+  }
+
+  &__img {
+    &__wrapper {
+      position: relative;
+      aspect-ratio: 0.73/1;
+
+      @media (max-width: $laptop) {
+        margin: 0 auto;
+        max-width: 50rem;
+      }
+
+      @media (max-width: $tablet) {
+        max-width: 40rem;
+      }
+
+      @media (max-width: $mobile) {
+        max-width: 25rem;
+      }
+    }
+  }
+
+  &__details {
+    align-self: center;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .heading--h2 {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    font-size: $body-text-size;
+    color: $dark-grey-color;
+
+    &::before {
+      display: inline-block;
+      content: url('../../../../public/svg/time-icon.svg');
+      width: 2rem;
+      height: 2rem;
+      margin-right: 8px;
+    }
+  }
+
+  &__description {
+    text-align: inherit;
+    margin-bottom: 4rem;
+
+    span {
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+  .tech {
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    &__icon {
+      @include tooltip;
+      display: block;
+      width: 100%;
+      max-width: 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      &__icon {
+        max-width: 3rem;
+      }
+    }
+  }
+  .btns {
+    @media (max-width: 355px) {
+      justify-content: center;
+    }
+  }
+  .tech,
+  .apis,
+  .third-party {
+    margin-bottom: clamp(2rem, 3vw, 4rem);
+
+    .btns {
+      margin: 0;
+      justify-content: flex-start;
+    }
+  }
+}

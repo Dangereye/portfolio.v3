@@ -1,10 +1,12 @@
-@import '../components/navbar/navbar.scss';
-@import '../components/navbar/mobile_icon/mobile-icon.scss';
-@import '../components/navigation/navigation.scss';
+@import '../components/navbar/navbar';
+@import '../components/navbar/mobile_icon/mobile-icon';
+@import '../components/navigation/navigation';
 @import '../components/mobile_navigation/mobile-navigation';
 @import '../components/main/main';
 @import '../components/hero_section/hero-section';
-@import '../components/hero_section/feature/feature.scss';
+@import '../components/hero_section/feature/feature';
 @import '../components/about_section/about-section';
 @import '../components/skills_section/skills-section';
 @import '../components/list_group/list-group';
+@import '../components/projects_section/projects-section';
+@import '../components/projects_section/project/project.scss';

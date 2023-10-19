@@ -1,5 +1,5 @@
 // Components
-// import Apis from './Apis';
+import APIs from './APIs';
 // import Technologies from './Technologies';
 // import ThirdParty from './ThirdParty';
 
@@ -78,17 +78,17 @@ export default function Project({ project }: ProjectProps) {
           name={project.name}
           tech={project.tech}
           anim={`${id()}-animate-text`}
-        />
-        <Apis
+        /> */}
+        <APIs
           name={project.name}
           apis={project.apis}
           anim={`${id()}-animate-text`}
         />
-        <ThirdParty
+        {/* <ThirdParty
           name={project.name}
           third_party={project.third_party}
           anim={`${id()}-animate-text`}
-        /> */}
+        />  */}
         <div className={`btns ${id()}-animate-text`}>
           {project.project__anchor && (
             <Link

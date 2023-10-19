@@ -16,12 +16,12 @@ type ProjectProps = {
     name: string;
     tech: { image: string; name: string; width: string; height: string }[];
     description: string;
-    apis: { name: string; anchor: string }[];
+    apis: { name: string; anchor: string }[] | null;
     third_party: {
       name: string;
       anchor: string;
     }[];
-    project__anchor: string;
+    project__anchor: string | null;
     repo__anchor: string;
   };
 };

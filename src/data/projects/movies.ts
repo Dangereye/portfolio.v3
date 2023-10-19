@@ -29,7 +29,6 @@ export const movies = {
     "Search and explore millions of movies, television shows and personalities. Browse upcoming releases, rediscover favourites, and stay up-to-date on the latest trends. Use our filters to find exactly what you're looking for, including trailers, teasers, ratings, and reviews. With endless options, you'll never run out of things to watch.",
   apis: [
     { name: 'TMDB', anchor: 'https://www.themoviedb.org/documentation/api' },
-    ,
     {
       name: 'Fetch',
       anchor: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API',

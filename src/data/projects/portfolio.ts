@@ -1,6 +1,6 @@
 export const portfolio = {
   image: '/images/portfolio/portfolio-project.webp',
-  date: 'Mar 2022',
+  date: 'Oct 2023',
   name: 'Portfolio',
   tech: [
     { image: '/svg/html5.svg', name: 'HTML5', width: '34.29', height: '40' },
@@ -33,7 +33,7 @@ export const portfolio = {
   ],
   description:
     'A summary of my knowledge, current services offered, preferences and intentions. Also, providing a convenient way to view my latest work live and take a peek behind the scenes - while allowing further expansion and development of my skills and experience.',
-  apis: [],
+  apis: null,
   third_party: [
     {
       name: 'React icons',
@@ -52,5 +52,6 @@ export const portfolio = {
       anchor: 'https://www.emailjs.com/',
     },
   ],
+  project__anchor: null,
   repo__anchor: 'https://github.com/Dangereye/portfolio-v2',
 };

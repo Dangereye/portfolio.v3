@@ -13,15 +13,15 @@ export const portfolio = {
       height: '40',
     },
     {
-      image: '/svg/react.svg',
-      name: 'React: 17.0.2',
-      width: '45.71',
+      image: '/svg/typescript.svg',
+      name: 'TypeScript: 4.9.5',
+      width: '40',
       height: '40',
     },
     {
-      image: '/svg/next.svg',
-      name: 'Next: 12.1.0',
-      width: '40',
+      image: '/svg/react.svg',
+      name: 'React: 18.2.0',
+      width: '45.71',
       height: '40',
     },
     {
@@ -40,8 +40,8 @@ export const portfolio = {
       anchor: 'https://react-icons.github.io/react-icons/',
     },
     {
-      name: 'Prop-types',
-      anchor: 'https://www.npmjs.com/package/prop-types',
+      name: 'React router',
+      anchor: 'https://reactrouter.com/en/main',
     },
     {
       name: 'GSAP',

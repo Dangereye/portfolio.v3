@@ -1,6 +1,6 @@
 // Components
 import APIs from './APIs';
-// import Technologies from './Technologies';
+import Technologies from './Technologies';
 // import ThirdParty from './ThirdParty';
 
 // React router
@@ -14,7 +14,9 @@ type ProjectProps = {
     image: string;
     date: string;
     name: string;
-    tech: { image: string; name: string; width: string; height: string }[];
+    tech:
+      | { image: string; name: string; width: string; height: string }[]
+      | null;
     description: string;
     apis: { name: string; anchor: string }[] | null;
     third_party: {
@@ -74,11 +76,11 @@ export default function Project({ project }: ProjectProps) {
         <div className={`project__description ${id()}-animate-text`}>
           <p className='body-text'>{project.description}</p>
         </div>
-        {/* <Technologies
+        <Technologies
           name={project.name}
           tech={project.tech}
           anim={`${id()}-animate-text`}
-        /> */}
+        />
         <APIs
           name={project.name}
           apis={project.apis}

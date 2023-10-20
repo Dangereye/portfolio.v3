@@ -1,4 +1,4 @@
-export default function ReactSvg() {
+export default function ReactSvg() { 
   return (
     <svg viewBox="0 0 1024 1024" xmlSpace="preserve">
       <switch>

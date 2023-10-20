@@ -5,7 +5,7 @@ type TechnologiesProps = {
 };
 
 export default function Technologies({ name, tech, anim }: TechnologiesProps) {
-  if (tech && tech.length) {
+  if (tech && tech.length > 0) {
     return (
       <div className={`tech ${anim}`}>
         <h4 className='heading heading--h3'>Technologies</h4>

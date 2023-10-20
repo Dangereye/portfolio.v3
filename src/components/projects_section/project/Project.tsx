@@ -1,7 +1,7 @@
 // Components
 import APIs from './APIs';
 import Technologies from './Technologies';
-// import ThirdParty from './ThirdParty';
+import ThirdParty from './ThirdParty';
 
 // React router
 import { Link } from 'react-router-dom';
@@ -19,10 +19,12 @@ type ProjectProps = {
       | null;
     description: string;
     apis: { name: string; anchor: string }[] | null;
-    third_party: {
-      name: string;
-      anchor: string;
-    }[];
+    third_party:
+      | {
+          name: string;
+          anchor: string;
+        }[]
+      | null;
     project__anchor: string | null;
     repo__anchor: string;
   };
@@ -86,11 +88,11 @@ export default function Project({ project }: ProjectProps) {
           apis={project.apis}
           anim={`${id()}-animate-text`}
         />
-        {/* <ThirdParty
+        <ThirdParty
           name={project.name}
           third_party={project.third_party}
           anim={`${id()}-animate-text`}
-        />  */}
+        />
         <div className={`btns ${id()}-animate-text`}>
           {project.project__anchor && (
             <Link

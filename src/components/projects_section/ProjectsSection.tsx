@@ -10,30 +10,32 @@ import Project from './project/Project';
 export default function ProjectsSection() {
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
-    '.projects-animate',
+    '.projects-animate-down',
     '#projects',
     {
       y: -300,
-      duration: 0.6,
-      stagger: 0.05,
-      ease: 'back.out(1.4)',
+      opacity: 0,
     },
-    {}
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      stagger: 0.05,
+      ease: 'power2.Out',
+    }
   );
 
   return (
     <section className='section projects-section' id='projects'>
       <div className='container'>
-        <header className='article__header'>
-          <div className='heading heading--lead projects-animate-text'>
-            Projects
-          </div>
-          <h2 className='heading heading--h2 projects-animate-text'>
-            Latest work
-          </h2>
-        </header>
+        <div className='heading heading--lead projects-animate-down'>
+          Projects
+        </div>
+        <h2 className='heading heading--h2 projects-animate-down'>
+          Latest work
+        </h2>
         {projects.map((project) => (
-          <Project project={project} />
+          <Project key={project.name} project={project} />
         ))}
       </div>
     </section>

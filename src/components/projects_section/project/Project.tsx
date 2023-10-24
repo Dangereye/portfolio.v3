@@ -64,7 +64,7 @@ export default function Project({ project }: ProjectProps) {
   //   );
 
   return (
-    <div className='project' id={id()}>
+    <article className='project' id={id()}>
       <div className={`project__img ${id()}-animate-image`}>
         <div className='project__img__wrapper'>
           <img src={project.image} alt={project.name} />
@@ -114,6 +114,6 @@ export default function Project({ project }: ProjectProps) {
           </Link>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

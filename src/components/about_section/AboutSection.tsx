@@ -80,8 +80,8 @@ export default function AboutSection() {
             performance-driven.
           </p>
           <div className='btns about-animate-text'>
-            <Link to='/#contact'>
-              <a className='btn btn--large btn--primary '>Contact me</a>
+            <Link to='/#contact' className='btn btn--large btn--primary '>
+              Contact me
             </Link>
             {/* <Button
               name='Download CV'

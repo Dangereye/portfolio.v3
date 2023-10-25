@@ -1,13 +1,13 @@
+// React router
+import { Link } from 'react-router-dom';
+
+// Hooks
+import useAnimation from '../../../hooks/useAnimation';
+
 // Components
 import APIs from './APIs';
 import Technologies from './Technologies';
 import ThirdParty from './ThirdParty';
-
-// React router
-import { Link } from 'react-router-dom';
-
-// Animation hook
-import useAnimation from '../../../hooks/useAnimation';
 
 type ProjectProps = {
   project: {
@@ -36,7 +36,27 @@ export default function Project({ project, index }: ProjectProps) {
     return project.name.replaceAll(' ', '-').toLowerCase();
   };
 
-  const checkIndex = (index: number) => {
+  const getImageStartPosition = () => {
+    let pos;
+    if (index % 2 === 0) {
+      pos = -300;
+    } else {
+      pos = 300;
+    }
+    return pos;
+  };
+
+  const getTextStartPosition = () => {
+    let pos;
+    if (index % 2 === 0) {
+      pos = 300;
+    } else {
+      pos = -300;
+    }
+    return pos;
+  };
+
+  const getProjectAltClass = (index: number) => {
     if (index % 2 === 0) {
       return '';
     }
@@ -44,34 +64,36 @@ export default function Project({ project, index }: ProjectProps) {
   };
 
   // useAnimation(element id,trigger id,{from options},{to options})
-  //   useAnimation(
-  //     `.${id()}-animate-image`,
-  //     `#${id()}`,
-  //     {
-  //       x: -300,
-  //       y: 0,
-  //       scale: 1.3,
-  //       duration: 1,
-  //       ease: 'ease-out',
-  //     },
-  //     {}
-  //   );
+  useAnimation(
+    `.${id()}-animate-image`,
+    `#${id()}`,
+    {
+      opacity: 0,
+      x: getImageStartPosition(),
+      scale: 1.3,
+    },
+    { opacity: 1, x: 0, scale: 1, duration: 1, ease: 'power2.Out' }
+  );
 
-  //   useAnimation(
-  //     `.${id()}-animate-text`,
-  //     `#${id()}`,
-  //     {
-  //       x: 300,
-  //       y: 0,
-  //       delay: 0.4,
-  //       ease: 'back.out(1.4)',
-  //       stagger: 0.05,
-  //     },
-  //     {}
-  //   );
+  useAnimation(
+    `.${id()}-animate-text`,
+    `#${id()}`,
+    {
+      x: getTextStartPosition(),
+      opacity: 0,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      delay: 0.4,
+      duration: 0.6,
+      stagger: 0.05,
+      ease: 'power2.Out',
+    }
+  );
 
   return (
-    <article className={`project ${checkIndex(index)}`} id={id()}>
+    <article className={`project ${getProjectAltClass(index)}`} id={id()}>
       <div className={`project__img ${id()}-animate-image`}>
         <div className='project__img__wrapper'>
           <img src={project.image} alt={project.name} />

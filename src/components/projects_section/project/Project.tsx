@@ -28,15 +28,22 @@ type ProjectProps = {
     project__anchor: string | null;
     repo__anchor: string;
   };
+  index: number;
 };
 
-export default function Project({ project }: ProjectProps) {
+export default function Project({ project, index }: ProjectProps) {
   const id = () => {
     return project.name.replaceAll(' ', '-').toLowerCase();
   };
 
-  // Animation
-  // useAnimation(element id,trigger id,{animation options},{trigger options})
+  const checkIndex = (index: number) => {
+    if (index % 2 === 0) {
+      return '';
+    }
+    return 'alt';
+  };
+
+  // useAnimation(element id,trigger id,{from options},{to options})
   //   useAnimation(
   //     `.${id()}-animate-image`,
   //     `#${id()}`,
@@ -64,7 +71,7 @@ export default function Project({ project }: ProjectProps) {
   //   );
 
   return (
-    <article className='project' id={id()}>
+    <article className={`project ${checkIndex(index)}`} id={id()}>
       <div className={`project__img ${id()}-animate-image`}>
         <div className='project__img__wrapper'>
           <img src={project.image} alt={project.name} />

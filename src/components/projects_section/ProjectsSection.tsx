@@ -34,8 +34,8 @@ export default function ProjectsSection() {
         <h2 className='heading heading--h2 projects-animate-down'>
           Latest work
         </h2>
-        {projects.map((project) => (
-          <Project key={project.name} project={project} />
+        {projects.map((project, index) => (
+          <Project key={project.name} project={project} index={index} />
         ))}
       </div>
     </section>

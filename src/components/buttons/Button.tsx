@@ -1,15 +1,13 @@
 type ButtonProps = {
-  name?: string;
-  icon?: React.ReactNode;
+  children: React.ReactNode;
   ariaLabel?: string;
   variant: 'btn--primary' | 'btn--secondary' | 'btn--tertiary';
   fnc: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  disabled: boolean;
+  disabled?: boolean;
 };
 
 export default function Button({
-  name,
-  icon,
+  children,
   ariaLabel,
   variant,
   fnc = () => {},
@@ -22,8 +20,7 @@ export default function Button({
       aria-label={ariaLabel}
       disabled={disabled}
     >
-      {name && name}
-      {icon && icon}
+      {children}
     </button>
   );
 }

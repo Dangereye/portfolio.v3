@@ -8,6 +8,7 @@ import AppContextProvider from './context/appContext';
 import Navbar from './components/navbar/Navbar';
 import MobileNavigation from './components/mobile_navigation/MobileNavigation';
 import Main from './components/main/Main';
+import Modal from './components/modal/Modal';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <BrowserRouter>
         <AppContextProvider>
           <Navbar />
+          <Modal />
           <MobileNavigation />
           <Routes>
             <Route path='/' element={<Main />} />

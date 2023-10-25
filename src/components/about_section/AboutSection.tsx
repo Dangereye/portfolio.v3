@@ -90,7 +90,7 @@ export default function AboutSection() {
             performance-driven.
           </p>
           <div className='btns about-animate-text'>
-            <Link to='/#contact' className='btn btn--large btn--primary '>
+            <Link to='/#contact' className='btn btn--primary '>
               Contact me
             </Link>
             <Button variant='btn--tertiary' fnc={downloadCV}>

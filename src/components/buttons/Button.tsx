@@ -15,7 +15,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`btn ${variant}${disabled && 'btn--disabled'}`}
+      className={`btn ${variant} ${disabled ? 'btn--disabled' : ''}`}
       onClick={fnc}
       aria-label={ariaLabel}
       disabled={disabled}

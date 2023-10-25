@@ -1,5 +1,5 @@
 .navbar {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
@@ -14,6 +14,7 @@
   justify-content: center;
 
   color: $body-text-light;
+  background-color: $dark-color;
 
   a {
     color: inherit;

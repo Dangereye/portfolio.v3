@@ -16,16 +16,13 @@ export default function Navbar() {
   useAnimation(
     '.navbar-animate',
     '#navbar',
-    {
-      y: -300,
-      opacity: 0,
-    },
-    { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: 'power2.Out' }
+    { y: -300 },
+    { y: 0, duration: 1, delay: 0.3, ease: 'power2.out' }
   );
 
   return (
-    <header className='navbar navbar-animate' id='navbar'>
-      <div className='container'>
+    <header className='navbar' id='navbar'>
+      <div className='container navbar-animate'>
         <Link to='/' className='logo'>
           Craig Puxty
         </Link>

@@ -26,6 +26,12 @@
       font-size: $h2-size;
       letter-spacing: 1px;
       color: inherit;
+
+      @media (hover: hover) {
+        &:hover {
+          color: #fff;
+        }
+      }
     }
   }
 

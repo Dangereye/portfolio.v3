@@ -39,6 +39,7 @@ export default function MobileNavigation() {
       className={
         mobileNavIsOpen ? 'mobile-navigation' : 'mobile-navigation closed'
       }
+      id='mobile-menu'
     >
       <div className='container'>
         <Navigation

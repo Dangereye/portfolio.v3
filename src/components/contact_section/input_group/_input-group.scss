@@ -1,6 +1,18 @@
-.form__input-group {
+.input-group {
   display: flex;
   flex-direction: column;
   gap: 5px;
   flex: 1 1 30rem;
+
+  label {
+    display: block;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__error-text {
+    color: $error-color;
+    font-size: 1.5rem;
+  }
 }

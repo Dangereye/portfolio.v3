@@ -14,10 +14,10 @@ export default function InputGroup({
   error_msg,
 }: InputGroupProps) {
   return (
-    <div className={`form__input-group ${anim}`}>
+    <div className={`input-group ${anim}`}>
       <label htmlFor={id}>{name}</label>
       {children}
-      <div className='form__error-text'>{error_msg}</div>
+      <div className='input-group__error-text'>{error_msg}</div>
     </div>
   );
 }

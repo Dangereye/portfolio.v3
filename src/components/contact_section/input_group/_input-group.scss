@@ -1,7 +1,7 @@
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 1rem;
   flex: 1 1 30rem;
 
   label {
@@ -9,6 +9,42 @@
     text-transform: capitalize;
     font-size: 1.6rem;
     font-weight: 500;
+  }
+
+  input,
+  textarea {
+    font-family: 'Hind', sans-serif;
+    width: 100%;
+    font-size: 2rem;
+    border: 2px solid $grey-color;
+    background-color: $grey-color;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    resize: vertical;
+    outline-color: transparent;
+    transition: border $time, background-color $time, outline-color $time;
+
+    &.success {
+      background-color: rgba($success-color, 0.05);
+      border-color: $success-color;
+    }
+
+    &.error {
+      background-color: rgba($error-color, 0.05);
+      border-color: $error-color;
+    }
+
+    &:focus {
+      outline: auto;
+      outline-color: $light-color;
+      background-color: $grey-color;
+      box-shadow: 0 0 3px $light-color;
+    }
+  }
+
+  textarea {
+    padding: 3rem;
+    min-height: 30rem;
   }
 
   &__error-text {

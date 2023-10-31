@@ -8,6 +8,8 @@ type FormInputProps = {
   type: InputTypes;
   name: string;
   init?: string;
+  onFocus: () => void;
+  onBlur: () => void;
 };
 
 export default function FormInput({
@@ -15,6 +17,8 @@ export default function FormInput({
   type,
   name,
   init = '',
+  onFocus,
+  onBlur,
 }: FormInputProps) {
   const [value, setValue] = useState(init);
   return (
@@ -24,8 +28,8 @@ export default function FormInput({
       name={name}
       value={value}
       onChange={(e) => setValue(e.target.value)}
-      onFocus={() => {}}
-      onBlur={() => {}}
+      onFocus={onFocus}
+      onBlur={onBlur}
     />
   );
 }

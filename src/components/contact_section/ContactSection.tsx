@@ -27,6 +27,9 @@ import { formDefault } from '../../data/formDefault';
 
 // Animation hook
 import useAnimation from '../../hooks/useAnimation';
+import InputGroup from './input_group/InputGroup';
+import FormInput from './inputs/FormInput';
+import TextArea from './inputs/TextArea';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
@@ -236,6 +239,20 @@ export default function Contact() {
         </header>
 
         <form className='form' onSubmit={handleSubmit}>
+          <InputGroup
+            id='name'
+            name='name'
+            error_msg={state.name.error_msg}
+            anim='contact-animate-form'
+          >
+            <FormInput
+              id='name'
+              type='text'
+              name='name'
+              onFocus={() => {}}
+              onBlur={() => {}}
+            />
+          </InputGroup>
           {/* <InputGroup
             type='text'
             name='name'
@@ -245,6 +262,20 @@ export default function Contact() {
             error_msg={state.name.error_msg}
             anim='contact-animate-form'
           /> */}
+          <InputGroup
+            id='email'
+            name='email'
+            error_msg={state.email.error_msg}
+            anim='contact-animate-form'
+          >
+            <FormInput
+              id='email'
+              type='email'
+              name='email'
+              onFocus={() => {}}
+              onBlur={() => {}}
+            />
+          </InputGroup>
           {/* <InputGroup
             type='email'
             name='email'
@@ -254,6 +285,19 @@ export default function Contact() {
             error_msg={state.email.error_msg}
             anim='contact-animate-form'
           /> */}
+          <InputGroup
+            id='message'
+            name='message'
+            error_msg={state.message.error_msg}
+            anim='contact-animate-form'
+          >
+            <TextArea
+              id='message'
+              name='message'
+              onFocus={() => {}}
+              onBlur={() => {}}
+            />
+          </InputGroup>
           {/* <TextAreaGroup
             name='message'
             value={state.message.value}
@@ -266,8 +310,8 @@ export default function Contact() {
             {/* <Button
               classes={
                 state.complete
-                  ? 'btn--primary btn--large'
-                  : 'btn--disabled btn--large'
+                  ? 'btn--primary '
+                  : 'btn--disabled '
               }
               name={state.sending ? 'Sending' : 'Send message'}
               iconAfter={state.sending ? <FaSpinner /> : null}

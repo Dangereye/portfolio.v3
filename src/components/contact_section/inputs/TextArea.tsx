@@ -5,9 +5,17 @@ type TextAreaProps = {
   id: string;
   name: string;
   init?: string;
+  onFocus: () => void;
+  onBlur: () => void;
 };
 
-export default function TextArea({ id, name, init = '' }: TextAreaProps) {
+export default function TextArea({
+  id,
+  name,
+  init = '',
+  onFocus,
+  onBlur,
+}: TextAreaProps) {
   const [value, setValue] = useState(init);
   return (
     <textarea
@@ -15,8 +23,8 @@ export default function TextArea({ id, name, init = '' }: TextAreaProps) {
       name={name}
       value={value}
       onChange={(e) => setValue(e.target.value)}
-      onFocus={() => {}}
-      onBlur={() => {}}
+      onFocus={onFocus}
+      onBlur={onBlur}
     />
   );
 }

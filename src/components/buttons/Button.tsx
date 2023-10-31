@@ -1,7 +1,12 @@
 type ButtonProps = {
   children: React.ReactNode;
   ariaLabel?: string;
-  variant: 'btn--primary' | 'btn--secondary' | 'btn--tertiary' | 'btn--toast';
+  variant:
+    | 'btn--primary'
+    | 'btn--secondary'
+    | 'btn--tertiary'
+    | 'btn--disabled'
+    | 'btn--toast';
   fnc: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
 };

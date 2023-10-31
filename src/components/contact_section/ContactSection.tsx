@@ -30,6 +30,7 @@ import useAnimation from '../../hooks/useAnimation';
 import InputGroup from './input_group/InputGroup';
 import FormInput from './inputs/FormInput';
 import TextArea from './inputs/TextArea';
+import Button from '../buttons/Button';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
@@ -307,17 +308,18 @@ export default function Contact() {
             anim='contact-animate-form'
           /> */}
           <div className='btns contact-animate-form'>
-            {/* <Button
-              classes={
-                state.complete
-                  ? 'btn--primary '
-                  : 'btn--disabled '
-              }
-              name={state.sending ? 'Sending' : 'Send message'}
-              iconAfter={state.sending ? <FaSpinner /> : null}
-              iconClasses='spinner'
+            <Button
+              variant={state.complete ? 'btn--primary' : 'btn--disabled'}
               disabled={!state.complete}
-            /> */}
+              fnc={() => {}}
+            >
+              <span>{state.sending ? 'Sending' : 'Send message'}</span>
+              {state.sending ? (
+                <span className='spinner'>
+                  <FaSpinner />
+                </span>
+              ) : null}
+            </Button>
           </div>
         </form>
       </div>

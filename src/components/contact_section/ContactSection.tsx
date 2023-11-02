@@ -31,6 +31,7 @@ import InputGroup from './input_group/InputGroup';
 import FormInput from './inputs/FormInput';
 import TextArea from './inputs/TextArea';
 import Button from '../buttons/Button';
+import IconText from '../text_elements/icon_text/IconText';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
@@ -231,11 +232,11 @@ export default function Contact() {
             To discuss career & freelance opportunities, contact me directly or
             fill out the form and I'll get back to you promptly.
           </p>
-          {/* <IconText
+          <IconText
             icon={<MdEmail />}
             text='contactpux@gmail.com'
             anim='contact-animate'
-          /> */}
+          />
           {/* <SocialIcons list={Connect} anim='contact-animate' /> */}
         </header>
 

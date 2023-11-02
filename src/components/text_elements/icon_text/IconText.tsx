@@ -7,8 +7,8 @@ type IconTextProps = {
 export default function IconText({ icon, text, anim = '' }: IconTextProps) {
   return (
     <div className={`icon-text ${anim}`}>
-      <span>{icon}</span>
-      <span>{text}</span>
+      <span className='icon-text__icon'>{icon}</span>
+      <span className='icon-text__text'>{text}</span>
     </div>
   );
 }

@@ -17,6 +17,10 @@ html {
   &--404 {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   &--h1,

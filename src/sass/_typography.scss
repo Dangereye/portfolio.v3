@@ -27,6 +27,7 @@ html {
   &--h2,
   &--h3,
   &--404 {
+    color: $heading-dark;
     margin-bottom: 2rem;
     font-weight: 700;
   }
@@ -59,6 +60,7 @@ html {
   max-width: 80ch;
   font-size: $body-text-size;
   line-height: 1.618;
+  color: $body-text-dark;
 
   &--lead {
     font-size: $lead-body-text-size;

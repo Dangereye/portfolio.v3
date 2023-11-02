@@ -8,12 +8,13 @@ import emailjs from 'emailjs-com';
 import { AppContext } from '../../context/appContext';
 
 // Components
+import InputGroup from './input_group/InputGroup';
+import FormInput from './inputs/FormInput';
+import TextArea from './inputs/TextArea';
+import Button from '../buttons/Button';
+import IconText from '../text_elements/icon_text/IconText';
+import SocialIcons from './social_icons/SocialIcons';
 // import ArticleHeading from '../../components/ArticleHeading';
-// import InputGroup from './InputGroup';
-// import TextAreaGroup from './TextAreaGroup';
-// import Button from '../../components/Button';
-// import SocialIcons from './SocialIcons';
-// import IconText from '../../components/IconText';
 
 // Icons
 import { MdEmail, MdOutlineError } from 'react-icons/md';
@@ -27,11 +28,6 @@ import { formDefault } from '../../data/formDefault';
 
 // Animation hook
 import useAnimation from '../../hooks/useAnimation';
-import InputGroup from './input_group/InputGroup';
-import FormInput from './inputs/FormInput';
-import TextArea from './inputs/TextArea';
-import Button from '../buttons/Button';
-import IconText from '../text_elements/icon_text/IconText';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
@@ -237,7 +233,7 @@ export default function Contact() {
             text='contactpux@gmail.com'
             anim='contact-animate'
           />
-          {/* <SocialIcons list={Connect} anim='contact-animate' /> */}
+          <SocialIcons list={Connect} anim='contact-animate' />
         </header>
 
         <form className='form' onSubmit={handleSubmit}>

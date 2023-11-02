@@ -1,0 +1,24 @@
+.social-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: $dark-color;
+  transition: fill $time;
+
+  @include tooltip;
+
+  &:focus {
+    fill: $light-color;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      fill: $light-color;
+    }
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: inherit;
+  }
+}

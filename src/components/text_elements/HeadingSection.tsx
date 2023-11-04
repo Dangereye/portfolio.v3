@@ -13,9 +13,9 @@ export default function HeadingSection({
   anim,
 }: HeadingSectionProps) {
   return (
-    <div className='heading heading--section'>
+    <header className='heading heading--section'>
       <HeadingDiv variant='heading--lead' heading={lead} anim={anim} />
       <Heading2 heading={heading} anim={anim} />
-    </div>
+    </header>
   );
 }

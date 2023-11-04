@@ -28,6 +28,8 @@ import { formDefault } from '../../data/formDefault';
 
 // Animation hook
 import useAnimation from '../../hooks/useAnimation';
+import HeadingSection from '../text_elements/HeadingSection';
+import BodyText from '../text_elements/BodyText';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
@@ -217,24 +219,24 @@ export default function Contact() {
   return (
     <section className='section contact-section' id='contact'>
       <div className='container'>
-        <header className='article__header'>
-          <div className='heading heading--lead contact-animate-text'>
-            contact
-          </div>
-          <h2 className='heading heading--h2 contact-animate-text'>
-            Let's talk!
-          </h2>
-          <p className='body-text contact-animate'>
-            To discuss career & freelance opportunities, contact me directly or
-            fill out the form and I'll get back to you promptly.
-          </p>
+        <div className='typography'>
+          <HeadingSection
+            lead='contact'
+            heading="let's talk!"
+            anim='contact-animate-text'
+          />
+          <BodyText
+            text="To discuss career & freelance opportunities, contact me directly or
+          fill out the form and I'll get back to you promptly."
+            anim='contact-animate'
+          />
           <IconText
             icon={<MdEmail />}
             text={EmailAddress}
             anim='contact-animate'
           />
           <SocialIcons list={Connect} anim='contact-animate' />
-        </header>
+        </div>
 
         <form className='form' onSubmit={handleSubmit}>
           <InputGroup

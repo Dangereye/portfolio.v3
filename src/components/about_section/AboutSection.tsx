@@ -9,9 +9,11 @@ import { AppContext } from '../../context/appContext';
 
 // Components
 import Button from '../buttons/Button';
+import HeadingSection from '../text_elements/HeadingSection';
 
 // Animation hook
 import useAnimation from '../../hooks/useAnimation';
+import BodyText from '../text_elements/BodyText';
 
 export default function AboutSection() {
   const { setModalIsOpen } = useContext(AppContext);
@@ -61,34 +63,40 @@ export default function AboutSection() {
           </div>
         </div>
         <div className='text'>
-          <div className='heading heading--lead about-animate-text'>
-            About me
-          </div>
-          <h2 className='heading heading--h2 about-animate-text'>
-            Front-end developer
-          </h2>
-          <p className='body-text body-text--lead about-animate-text'>
-            Specialising in React.js development.
-          </p>
-          <p className='body-text about-animate-text'>
-            Hi! I'm Craig Puxty, a bespoke front-end developer from a small town
-            in Flintshire, North Wales, UK.
-          </p>
-          <p className='body-text about-animate-text'>
-            Over several years, I've dedicated much of my free time to gaining
+          <HeadingSection
+            lead='about me'
+            heading='Front-end developer'
+            anim='about-animate-text'
+          />
+          <BodyText
+            variant='body-text--lead'
+            text='Specialising in React.js development.'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text="Hi! I'm Craig Puxty, a bespoke front-end developer from a small town
+            in Flintshire, North Wales, UK."
+            anim='about-animate-text'
+          />
+          <BodyText
+            text="Over several years, I've dedicated much of my free time to gaining
             proficiency in several front-end technologies and design tools,
-            together with some back-end knowledge.
-          </p>
-          <p className='body-text about-animate-text'>
-            My development process is meticulous, following fundamental design
-            principles: "keep it simple, stupid" (KISS), "don't repeat yourself"
-            (DRY), simple navigation, visual hierarchy, consistency, etc.
-          </p>
-          <p className='body-text about-animate-text'>
-            My mission is to create beautiful, modern software with custom,
+            together with some back-end knowledge."
+            anim='about-animate-text'
+          />
+          <BodyText
+            text="My development process is meticulous, following fundamental design
+            principles: keep it simple, stupid (KISS), don't repeat yourself
+            (DRY), simple navigation, visual hierarchy, consistency, etc."
+            anim='about-animate-text'
+          />
+          <BodyText
+            text="My mission is to create beautiful, modern software with custom,
             high-quality imagery - that's accessible, scalable, responsive and
-            performance-driven.
-          </p>
+            performance-driven."
+            anim='about-animate-text'
+          />
+
           <div className='btns about-animate-text'>
             <Link to='/#contact' className='btn btn--primary '>
               Contact me

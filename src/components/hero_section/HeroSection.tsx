@@ -14,6 +14,7 @@ import Feature from './feature/Feature';
 import ReactSvg from '../../svgs/React';
 import CompassSvg from '../../svgs/Compass';
 import ScreenSvg from '../../svgs/Screens';
+import PerformanceSvg from '../../svgs/Performance';
 
 export default function HeroSection() {
   // useAnimation(element id,trigger id,{from options},{to options})
@@ -103,6 +104,7 @@ export default function HeroSection() {
           <Feature icon={<ReactSvg />} text='React.js focused' />
           <Feature icon={<CompassSvg />} text='Modern designs' />
           <Feature icon={<ScreenSvg />} text='Device responsive' />
+          <Feature icon={<PerformanceSvg />} text='Performance driven' />
         </div>
       </div>
     </section>

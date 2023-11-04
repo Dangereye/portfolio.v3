@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import useAnimation from '../../hooks/useAnimation';
 
 // Components
+import HeadingDiv from '../text_elements/HeadingDiv';
+import Heading1 from '../text_elements/Heading1';
+import BodyText from '../text_elements/BodyText';
 import Feature from './feature/Feature';
 
 // SVGs
@@ -56,29 +59,40 @@ export default function HeroSection() {
       <div className='background hero-animate-bg'></div>
       <div className='container'>
         <div className='typography'>
-          <div className='heading heading--lead hero-animate-down'>
-            Front-end developer
-          </div>
-          <h1 className='heading heading--h1'>
-            <div className='hero-animate-down'>I build things</div>
-            <div className='hero-animate-down'>
-              for the <span>Web</span>
-            </div>
-          </h1>
-          <p className='body-text hero-animate-down'>
-            Specialising in{' '}
-            <Link
-              to='https://reactjs.org'
-              rel='noopener no referrer'
-              target='_blank'
-            >
-              React.js
-            </Link>{' '}
-            development.
-            <br /> I love building (and occasionally designing) beautiful,
-            modern software that's accessible, scalable, responsive and
-            performance-driven.
-          </p>
+          <HeadingDiv
+            variant='heading--lead'
+            heading='front-end developer'
+            anim='hero-animate-down'
+          />
+          <Heading1
+            heading={
+              <>
+                <div className='hero-animate-down'>I build things</div>
+                <div className='hero-animate-down'>
+                  for the <span>Web</span>
+                </div>
+              </>
+            }
+          />
+          <BodyText
+            text={
+              <>
+                Specialising in{' '}
+                <Link
+                  to='https://reactjs.org'
+                  rel='noopener no referrer'
+                  target='_blank'
+                >
+                  React.js
+                </Link>{' '}
+                development.
+                <br /> I love building (and occasionally designing) beautiful,
+                modern software that's accessible, scalable, responsive and
+                performance-driven.
+              </>
+            }
+            anim='hero-animate-down'
+          />
           <div className='btns hero-animate-down'>
             <Link to='/#projects' className='btn btn--primary btn--large'>
               Latest projects

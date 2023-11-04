@@ -1,7 +1,7 @@
 type BodyTextVariant = 'body-text--lead' | '';
 
 type BodyTextProps = {
-  text: string;
+  text: string | React.ReactNode;
   variant?: BodyTextVariant;
   anim?: string;
 };

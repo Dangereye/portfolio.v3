@@ -1,5 +1,5 @@
 type Heading1Props = {
-  heading: string;
+  heading: string | React.ReactNode;
   anim?: string;
 };
 

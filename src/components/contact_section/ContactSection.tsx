@@ -227,7 +227,7 @@ export default function Contact() {
           />
           <BodyText
             text="To discuss career & freelance opportunities, contact me directly or
-          fill out the form and I'll get back to you promptly."
+            fill out the form and I'll get back to you promptly."
             anim='contact-animate'
           />
           <IconText

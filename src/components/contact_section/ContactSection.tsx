@@ -22,7 +22,7 @@ import { VscPassFilled } from 'react-icons/vsc';
 import { FaSpinner } from 'react-icons/fa';
 
 // Data
-import { Connect } from '../../data/connect';
+import { Connect, EmailAddress } from '../../data/connect';
 import { toastDefault } from '../../data/toastDefault';
 import { formDefault } from '../../data/formDefault';
 
@@ -230,7 +230,7 @@ export default function Contact() {
           </p>
           <IconText
             icon={<MdEmail />}
-            text='contactpux@gmail.com'
+            text={EmailAddress}
             anim='contact-animate'
           />
           <SocialIcons list={Connect} anim='contact-animate' />

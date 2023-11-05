@@ -1,16 +1,17 @@
 // Components
-
-// import Project from './project/Project';
-
-// Animation hook
-import { projects } from '../../data/projects/projects';
-import useAnimation from '../../hooks/useAnimation';
+import HeadingSection from '../text_elements/HeadingSection';
 import Project from './project/Project';
+
+// Hooks
+import useAnimation from '../../hooks/useAnimation';
+
+// Data
+import { projects } from '../../data/projects/projects';
 
 export default function ProjectsSection() {
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
-    '.projects-animate-down',
+    '.projects-animate-text',
     '#projects',
     {
       y: -300,
@@ -28,12 +29,12 @@ export default function ProjectsSection() {
   return (
     <section className='section projects-section' id='projects'>
       <div className='container'>
-        <div className='heading heading--lead projects-animate-down'>
-          Projects
-        </div>
-        <h2 className='heading heading--h2 projects-animate-down'>
-          Latest work
-        </h2>
+        <HeadingSection
+          lead='projects'
+          heading='latest work'
+          anim='projects-animate-text'
+        />
+
         {projects.map((project, index) => (
           <Project key={project.name} project={project} index={index} />
         ))}

@@ -19,13 +19,13 @@ export default function AboutSection() {
   const { setModalIsOpen } = useContext(AppContext);
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
-    '.about-animate',
+    '.about-animate-image',
     '#about',
     {
       scale: 1.4,
       opacity: 0,
     },
-    { scale: 1, opacity: 1, duration: 1, delay: 0.5, ease: 'power2.Out' }
+    { scale: 1, opacity: 1, duration: 1, ease: 'power2.Out' }
   );
 
   useAnimation(
@@ -39,7 +39,7 @@ export default function AboutSection() {
       y: 0,
       opacity: 1,
       duration: 0.3,
-      delay: 1,
+      delay: 0.5,
       stagger: 0.05,
       ease: 'power2.Out',
     }
@@ -52,7 +52,7 @@ export default function AboutSection() {
   return (
     <section className='section about-section' id='about'>
       <div className='container'>
-        <div className='image about-animate'>
+        <div className='image about-animate-image'>
           <div className='image__wrapper'>
             <img
               src='/images/about/profile.webp'

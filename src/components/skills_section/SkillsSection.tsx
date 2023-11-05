@@ -38,7 +38,7 @@ export default function SkillsSection() {
       y: 0,
       opacity: 1,
       duration: 0.3,
-      delay: 1,
+      delay: 0.5,
       stagger: 0.05,
       ease: 'power2.Out',
     }
@@ -55,7 +55,7 @@ export default function SkillsSection() {
       y: 0,
       opacity: 1,
       duration: 0.3,
-      delay: 1.2,
+      delay: 0.7,
       stagger: 0.01,
       ease: 'power2.Out',
     }

@@ -125,19 +125,19 @@ export default function Project({ project, index }: ProjectProps) {
         <div className={`btns ${id()}-animate-text`}>
           {project.project__anchor && (
             <Link
-              to={project.project__anchor}
-              target='_blank'
-              rel='noopener noreferrer'
               className='btn btn--primary btn--large'
+              to={project.project__anchor}
+              rel='noopener noreferrer'
+              target='_blank'
             >
               Launch Site
             </Link>
           )}
           <Link
-            to={project.repo__anchor}
-            target='_blank'
-            rel='noopener noreferrer'
             className='btn btn--tertiary'
+            to={project.repo__anchor}
+            rel='noopener noreferrer'
+            target='_blank'
           >
             view on Github
           </Link>

@@ -32,7 +32,7 @@
     }
   }
 
-  .section__header {
+  .typography {
     position: relative;
     margin: 0;
     display: flex;
@@ -41,6 +41,10 @@
     @include vert-padding;
     @include hoz-padding;
     z-index: 2;
+
+    .heading {
+      text-align: center;
+    }
 
     @media (max-width: $laptop) {
       padding: 0;

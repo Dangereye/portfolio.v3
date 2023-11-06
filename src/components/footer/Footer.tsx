@@ -73,7 +73,7 @@ export default function () {
           />
         </div>
         <div className='copyright'>
-          &copy; Craig Puxty - 2022. All Rights Reserved.
+          Copyright &copy; Craig Puxty - 2023. All rights reserved.
         </div>
       </div>
     </footer>

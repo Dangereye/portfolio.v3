@@ -1,0 +1,98 @@
+.footer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $dark-color;
+  @include hoz-padding;
+
+  @media (max-width: $laptop) {
+    margin-top: 4rem;
+  }
+
+  .container {
+    position: relative;
+    @include vert-padding;
+  }
+
+  .btn--back-to-top {
+    display: block;
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    place-content: center;
+    border: 6px solid #fff;
+    border-radius: 50%;
+
+    @media (max-width: $laptop) {
+      width: 6rem;
+      height: 6rem;
+      top: -3rem;
+      border: 3px solid #fff;
+    }
+  }
+
+  .heading {
+    color: $heading-light;
+  }
+
+  .icon-text {
+    margin: 0;
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: #fff;
+    }
+
+    &__text {
+      color: #fff;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding-bottom: 4rem;
+    color: $body-text-light;
+  }
+
+  &__links {
+    position: relative;
+    top: -2rem;
+    @include vert-padding;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 4rem;
+
+    @media (max-width: 1345px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .btn--tertiary {
+    padding: 0;
+    line-height: 1;
+
+    @media (hover: hover) {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    a:hover {
+      color: #fff;
+    }
+  }
+}

@@ -1,8 +1,15 @@
 .list-group {
   .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
     &__item {
       min-width: 20rem;
-      margin-bottom: 1rem;
+
+      a {
+        text-transform: capitalize;
+      }
 
       @media (max-width: $mobile) {
         min-width: 18rem;

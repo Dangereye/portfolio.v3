@@ -1,3 +1,5 @@
+import Heading3 from '../text_elements/Heading3';
+
 type ListGroupProps<T> = {
   heading: string;
   list: T[];
@@ -11,8 +13,12 @@ export default function ListGroup<T>({
 }: ListGroupProps<T>) {
   return (
     <div className='list-group animate-list'>
-      <h3 className='heading heading--h3 animate-list-item'>{heading}</h3>
-      <ul className='list'>{list.map((item) => renderItem(item))}</ul>
+      <Heading3 heading={heading} />
+      <ul className='list'>
+        {list.map((item) => (
+          <li className='list__item'>{renderItem(item)}</li>
+        ))}
+      </ul>
     </div>
   );
 }

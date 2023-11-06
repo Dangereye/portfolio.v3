@@ -14,7 +14,7 @@
 
   .container {
     position: relative;
-    @include vert-padding;
+    @include full-top-padding;
   }
 
   .btn--back-to-top {

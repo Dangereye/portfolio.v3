@@ -1,8 +1,6 @@
 import { BsGithub, BsTwitter, BsTelegram } from 'react-icons/bs';
 
-export const EmailAddress = 'contactpux@gmail.com';
-
-export const Connect = [
+export const connect = [
   {
     name: 'Github',
     anchor: 'https://github.com/Dangereye',

@@ -22,7 +22,8 @@ import { VscPassFilled } from 'react-icons/vsc';
 import { FaSpinner } from 'react-icons/fa';
 
 // Data
-import { Connect, EmailAddress } from '../../data/connect';
+import { EmailAddress } from '../../data/emailAddress';
+import { connect } from '../../data/connect';
 import { toastDefault } from '../../data/toastDefault';
 import { formDefault } from '../../data/formDefault';
 
@@ -30,6 +31,7 @@ import { formDefault } from '../../data/formDefault';
 import useAnimation from '../../hooks/useAnimation';
 import HeadingSection from '../text_elements/HeadingSection';
 import BodyText from '../text_elements/BodyText';
+import ListGroup from '../list_group/ListGroup';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
@@ -230,12 +232,13 @@ export default function Contact() {
             fill out the form and I'll get back to you promptly."
             anim='contact-animate'
           />
+
           <IconText
             icon={<MdEmail />}
             text={EmailAddress}
             anim='contact-animate'
           />
-          <SocialIcons list={Connect} anim='contact-animate' />
+          <SocialIcons list={connect} anim='contact-animate' />
         </div>
 
         <form className='form' onSubmit={handleSubmit}>

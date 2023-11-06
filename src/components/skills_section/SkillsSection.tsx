@@ -120,21 +120,27 @@ export default function SkillsSection() {
             heading={environment.heading}
             list={environment.list}
             renderItem={(item) => (
-              <li className='list__item image animate-list-item'>{item}</li>
+              <li key={item} className='list__item image animate-list-item'>
+                {item}
+              </li>
             )}
           />
           <ListGroup
             heading={designTools.heading}
             list={designTools.list}
             renderItem={(item) => (
-              <li className='list__item image animate-list-item'>{item}</li>
+              <li key={item} className='list__item image animate-list-item'>
+                {item}
+              </li>
             )}
           />
           <ListGroup
             heading={frontEnd.heading}
             list={frontEnd.list}
             renderItem={(item) => (
-              <li className='list__item image animate-list-item'>{item}</li>
+              <li key={item} className='list__item image animate-list-item'>
+                {item}
+              </li>
             )}
           />
 
@@ -142,7 +148,9 @@ export default function SkillsSection() {
             heading={backEnd.heading}
             list={backEnd.list}
             renderItem={(item) => (
-              <li className='list__item image animate-list-item'>{item}</li>
+              <li key={item} className='list__item image animate-list-item'>
+                {item}
+              </li>
             )}
           />
         </div>

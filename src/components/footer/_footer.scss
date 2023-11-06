@@ -14,7 +14,11 @@
 
   .container {
     position: relative;
-    @include full-top-padding;
+    padding-top: 9rem;
+
+    @media (max-width: $mobile) {
+      padding-top: 5rem;
+    }
   }
 
   .btn--back-to-top {

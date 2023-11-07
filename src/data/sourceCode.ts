@@ -1,22 +1,22 @@
 export const sourceCode = [
   {
-    name: 'Movies',
+    name: 'movies',
     anchor: 'https://github.com/Dangereye/movies-ts',
   },
   {
-    name: 'Star Wars',
+    name: 'star wars',
     anchor: 'https://github.com/Dangereye/star-wars-ts',
   },
   {
-    name: 'Portfolio-v2',
-    anchor: 'https://github.com/Dangereye/portfolio-v2',
+    name: 'portfolio.v3',
+    anchor: 'https://github.com/Dangereye/portfolio.v3',
   },
   {
-    name: 'Games',
+    name: 'games',
     anchor: 'https://github.com/Dangereye/games',
   },
   {
-    name: 'The Weather',
+    name: 'the weather',
     anchor: 'https://github.com/Dangereye/the-weather',
   },
 ];

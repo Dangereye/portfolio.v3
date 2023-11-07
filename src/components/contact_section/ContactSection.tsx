@@ -38,29 +38,25 @@ export default function Contact() {
   const [state, setState] = useState(formDefault);
 
   // useAnimation(element id,trigger id,{from options},{to options})
-  //   useAnimation(
-  //     '.contact-animate-form',
-  //     '#contact',
-  //     {
-  //       x: 300,
-  //       y: 0,
-  //       stagger: 0.05,
-  //       ease: 'back.out(1.4)',
-  //     },
-  //     {}
-  //   );
+  useAnimation(
+    '.contact-animate-form',
+    '#contact',
+    {
+      x: 300,
+      opacity: 0,
+    },
+    { x: 0, opacity: 1, stagger: 0.05, duration: 0.6, ease: 'power2.Out' }
+  );
 
-  //   useAnimation(
-  //     '.contact-animate',
-  //     '#contact',
-  //     {
-  //       x: -300,
-  //       y: 0,
-  //       stagger: 0.05,
-  //       ease: 'back.out(1.4)',
-  //     },
-  //     {}
-  //   );
+  useAnimation(
+    '.contact-animate-text',
+    '#contact',
+    {
+      x: -300,
+      opacity: 0,
+    },
+    { x: 0, opacity: 1, stagger: 0.05, duration: 0.6, ease: 'power2.Out' }
+  );
 
   // Functions
   //   const resetValidation = () => {
@@ -230,15 +226,15 @@ export default function Contact() {
           <BodyText
             text="To discuss career & freelance opportunities, contact me directly or
             fill out the form and I'll get back to you promptly."
-            anim='contact-animate'
+            anim='contact-animate-text'
           />
 
           <IconText
             icon={<MdEmail />}
             text={EmailAddress}
-            anim='contact-animate'
+            anim='contact-animate-text'
           />
-          <SocialIcons list={connect} anim='contact-animate' />
+          <SocialIcons list={connect} anim='contact-animate-text' />
         </div>
 
         <form className='form' onSubmit={handleSubmit}>

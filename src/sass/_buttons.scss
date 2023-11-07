@@ -34,6 +34,7 @@
   @media (max-width: $laptop) {
     padding: 2rem 4rem;
   }
+
   @media (max-width: $mobile) {
     padding: 1.6rem 3.2rem;
   }
@@ -59,10 +60,6 @@
     color: #fff;
     background-color: $light-color;
 
-    &:focus {
-      @include primary-hover;
-    }
-
     @media (hover: hover) {
       &:hover {
         @include primary-hover;
@@ -74,10 +71,6 @@
     border: 1px solid $dark-grey-color;
     color: $heading-dark;
 
-    &:focus {
-      @include secondary-hover;
-    }
-
     @media (hover: hover) {
       &:hover {
         @include secondary-hover;
@@ -88,10 +81,6 @@
   &--tertiary {
     padding: 1rem;
     color: $light-color;
-
-    &:focus {
-      @include tertiary-hover;
-    }
 
     @media (hover: hover) {
       &:hover {

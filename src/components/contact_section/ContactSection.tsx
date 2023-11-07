@@ -36,6 +36,7 @@ import ListGroup from '../list_group/ListGroup';
 export default function Contact() {
   const { setToast } = useContext(AppContext);
   const [state, setState] = useState(formDefault);
+  console.log(state);
 
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
@@ -59,65 +60,68 @@ export default function Contact() {
   );
 
   // Functions
-  //   const resetValidation = () => {
-  //     setState((prev) => ({
-  //       ...prev,
-  //       complete: false,
-  //       name: { ...prev.name, error_msg: '' },
-  //       email: { ...prev.email, error_msg: '' },
-  //       message: { ...prev.message, error_msg: '' },
-  //     }));
+  const resetValidation = () => {
+    console.log('Resetting state');
+    setState((prev) => ({
+      ...prev,
+      complete: false,
+      name: { ...prev.name, error_msg: '' },
+      email: { ...prev.email, error_msg: '' },
+      message: { ...prev.message, error_msg: '' },
+    }));
 
-  //     const input = document.querySelectorAll('input');
-  //     input.forEach((input) => {
-  //       input.classList.remove('success');
-  //       input.classList.remove('error');
-  //     });
+    const input = document.querySelectorAll('input');
+    input?.forEach((input) => {
+      input.classList.remove('success');
+      input.classList.remove('error');
+    });
 
-  //     const textArea = document.querySelector('textarea');
-  //     textArea.classList.remove('success');
-  //     textArea.classList.remove('error');
-  //   };
+    const textArea = document.querySelector('textarea');
+    textArea?.classList.remove('success');
+    textArea?.classList.remove('error');
+  };
 
-  //   const handleUpdateInput = (e) => {
-  //     const { name, value } = e.target;
-  //     setState({
-  //       ...state,
-  //       [name]: {
-  //         value,
-  //         error_msg: '',
-  //       },
-  //     });
-  //   };
+  const handleUpdateInput = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setState({
+      ...state,
+      [name]: {
+        value,
+        error_msg: '',
+      },
+    });
+  };
 
-  //   const checkName = () => {
-  //     if (state.name.value.length < 1) {
-  //       setState((prev) => ({
-  //         ...prev,
-  //         name: { ...state.name, error_msg: 'Please enter your name.' },
-  //       }));
-  //       const target = document.querySelector("[name='name']");
-  //       target.classList.add('error');
-  //       return;
-  //     }
+  const checkName = (e: React.FocusEvent<HTMLInputElement>) => {
+    if (state.name.value.length < 1) {
+      setState((prev) => ({
+        ...prev,
+        name: { ...state.name, error_msg: 'Please enter your name.' },
+      }));
+      const target = document.querySelector("[name='name']");
+      target?.classList.add('error');
+      return;
+    }
 
-  //     if (state.name.value.length < 3) {
-  //       setState((prev) => ({
-  //         ...prev,
-  //         name: {
-  //           ...prev.name,
-  //           error_msg: '3 characters min.',
-  //         },
-  //       }));
+    if (state.name.value.length < 3) {
+      setState((prev) => ({
+        ...prev,
+        name: {
+          ...prev.name,
+          error_msg: '3 characters min.',
+        },
+      }));
 
-  //       const target = document.querySelector("[name='name']");
-  //       target.classList.add('error');
-  //       return;
-  //     }
-  //     const target = document.querySelector("[name='name']");
-  //     target.classList.remove('error');
-  //     target.classList.add('success');
-  //   };
+      const target = document.querySelector("[name='name']");
+      target?.classList.add('error');
+      return;
+    }
+    const target = document.querySelector("[name='name']");
+    target?.classList.remove('error');
+    target?.classList.add('success');
+  };
 
   //   const checkEmail = () => {
   //     if (state.email.value.length < 1) {
@@ -164,16 +168,9 @@ export default function Contact() {
   //     setState((prev) => ({ ...prev, complete: true }));
   //   };
 
-  //   const validation = () => {
-  //     resetValidation();
-  //     checkName();
-  //     checkEmail();
-  //     checkMessage();
-  //   };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    //   validation();
+    resetValidation();
     //   sendMail(e);
   };
 
@@ -248,8 +245,10 @@ export default function Contact() {
               id='name'
               type='text'
               name='name'
+              value={state.name.value}
+              onChange={handleUpdateInput}
               onFocus={() => {}}
-              onBlur={() => {}}
+              onBlur={checkName}
             />
           </InputGroup>
           {/* <InputGroup
@@ -271,6 +270,8 @@ export default function Contact() {
               id='email'
               type='email'
               name='email'
+              value={state.email.value}
+              onChange={() => {}}
               onFocus={() => {}}
               onBlur={() => {}}
             />
@@ -293,6 +294,8 @@ export default function Contact() {
             <TextArea
               id='message'
               name='message'
+              value={state.message.value}
+              onChange={handleUpdateInput}
               onFocus={() => {}}
               onBlur={() => {}}
             />

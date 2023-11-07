@@ -1,28 +1,26 @@
-// React
-import { useState } from 'react';
-
 type TextAreaProps = {
   id: string;
   name: string;
-  init?: string;
-  onFocus: () => void;
-  onBlur: () => void;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onFocus: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
+  onBlur: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
 };
 
 export default function TextArea({
   id,
   name,
-  init = '',
+  value,
+  onChange,
   onFocus,
   onBlur,
 }: TextAreaProps) {
-  const [value, setValue] = useState(init);
   return (
     <textarea
       id={id}
       name={name}
       value={value}
-      onChange={(e) => setValue(e.target.value)}
+      onChange={onChange}
       onFocus={onFocus}
       onBlur={onBlur}
     />

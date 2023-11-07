@@ -1,22 +1,17 @@
-// React
-import { useContext } from 'react';
-
 // React router
 import { Link } from 'react-router-dom';
 
-// Context
-import { AppContext } from '../../context/appContext';
+// Hooks
+import useAnimation from '../../hooks/useAnimation';
+import useModal from '../../hooks/useModal';
 
 // Components
 import Button from '../buttons/Button';
 import HeadingSection from '../text_elements/HeadingSection';
-
-// Animation hook
-import useAnimation from '../../hooks/useAnimation';
 import BodyText from '../text_elements/BodyText';
 
 export default function AboutSection() {
-  const { setModalIsOpen } = useContext(AppContext);
+  const { downloadCV } = useModal();
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
     '.about-animate-image',
@@ -44,10 +39,6 @@ export default function AboutSection() {
       ease: 'power2.Out',
     }
   );
-
-  const downloadCV = () => {
-    setModalIsOpen(true);
-  };
 
   return (
     <section className='section about-section' id='about'>
@@ -102,7 +93,7 @@ export default function AboutSection() {
               Contact me
             </Link>
             <Button variant='btn--tertiary' fnc={downloadCV}>
-              <span>Download CV</span>
+              <span>download curriculum vitae</span>
             </Button>
           </div>
         </div>

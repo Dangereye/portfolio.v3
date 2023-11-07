@@ -24,7 +24,7 @@ export default function Modal() {
         </Button>
 
         <a
-          href='/curriculum_vitae.pdf'
+          href='/downloads/curriculum_vitae.pdf'
           className='btn btn--primary'
           download
           onClick={closeModal}

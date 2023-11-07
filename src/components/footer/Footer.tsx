@@ -1,8 +1,15 @@
+// React
+import { useContext } from 'react';
+
 // React router
 import { Link } from 'react-router-dom';
 
-// Components
+// Hooks
+import useModal from '../../hooks/useModal';
 
+// Components
+import Heading3 from '../text_elements/Heading3';
+import ListGroup from '../list_group/ListGroup';
 import IconText from '../text_elements/icon_text/IconText';
 import Button from '../buttons/Button';
 
@@ -10,16 +17,14 @@ import Button from '../buttons/Button';
 import { navigation } from '../../data/navigation';
 import { connect } from '../../data/connect';
 import { sourceCode } from '../../data/sourceCode';
+import { contact } from '../../data/contact';
 
 // Icons
-import { MdEmail } from 'react-icons/md';
 import { BiArrowToTop } from 'react-icons/bi';
-import ListGroup from '../list_group/ListGroup';
-import { contact } from '../../data/contact';
-import { downloads } from '../../data/downloads';
 
 export default function () {
-  //   const { downloadCV } = useModal();
+  const { downloadCV } = useModal();
+
   return (
     <footer className='footer'>
       <Link
@@ -55,15 +60,12 @@ export default function () {
               </Link>
             )}
           />
-          <ListGroup
-            heading='download'
-            list={downloads}
-            renderItem={(item) => (
-              <Button variant='btn--tertiary' fnc={item.fnc}>
-                <span>{item.name}</span>
-              </Button>
-            )}
-          />
+          <div>
+            <Heading3 heading='downloads' />
+            <Button variant='btn--tertiary' fnc={downloadCV}>
+              <span>curriculum vitae</span>
+            </Button>
+          </div>
           <ListGroup
             heading='contact'
             list={contact}

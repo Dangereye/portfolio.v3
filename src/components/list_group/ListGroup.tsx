@@ -3,12 +3,14 @@ import Heading3 from '../text_elements/Heading3';
 type ListGroupProps<T> = {
   heading: string;
   list: T[];
+  renderKey: (item: T) => string;
   renderItem: (item: T) => React.ReactNode;
 };
 
 export default function ListGroup<T>({
   heading,
   list,
+  renderKey,
   renderItem,
 }: ListGroupProps<T>) {
   return (
@@ -16,7 +18,9 @@ export default function ListGroup<T>({
       <Heading3 heading={heading} />
       <ul className='list'>
         {list.map((item) => (
-          <li className='list__item'>{renderItem(item)}</li>
+          <li key={renderKey(item)} className='list__item'>
+            {renderItem(item)}
+          </li>
         ))}
       </ul>
     </div>

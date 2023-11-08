@@ -119,39 +119,27 @@ export default function SkillsSection() {
           <ListGroup
             heading={environment.heading}
             list={environment.list}
-            renderItem={(item) => (
-              <li key={item} className='list__item image animate-list-item'>
-                {item}
-              </li>
-            )}
+            renderKey={(item) => item}
+            renderItem={(item) => item}
           />
           <ListGroup
             heading={designTools.heading}
             list={designTools.list}
-            renderItem={(item) => (
-              <li key={item} className='list__item image animate-list-item'>
-                {item}
-              </li>
-            )}
+            renderKey={(item) => item}
+            renderItem={(item) => item}
           />
           <ListGroup
             heading={frontEnd.heading}
             list={frontEnd.list}
-            renderItem={(item) => (
-              <li key={item} className='list__item image animate-list-item'>
-                {item}
-              </li>
-            )}
+            renderKey={(item) => item}
+            renderItem={(item) => item}
           />
 
           <ListGroup
             heading={backEnd.heading}
             list={backEnd.list}
-            renderItem={(item) => (
-              <li key={item} className='list__item image animate-list-item'>
-                {item}
-              </li>
-            )}
+            renderKey={(item) => item}
+            renderItem={(item) => item}
           />
         </div>
       </div>

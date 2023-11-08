@@ -45,7 +45,7 @@ export default function SkillsSection() {
   );
 
   useAnimation(
-    '.animate-list-item',
+    '.skills-list-item',
     '#skills',
     {
       y: -300,
@@ -122,6 +122,7 @@ export default function SkillsSection() {
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
+            anim='skills-list-item'
           />
           <ListGroup
             heading={designTools.heading}
@@ -129,6 +130,7 @@ export default function SkillsSection() {
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
+            anim='skills-list-item'
           />
           <ListGroup
             heading={frontEnd.heading}
@@ -136,6 +138,7 @@ export default function SkillsSection() {
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
+            anim='skills-list-item'
           />
 
           <ListGroup
@@ -144,6 +147,7 @@ export default function SkillsSection() {
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
+            anim='skills-list-item'
           />
         </div>
       </div>

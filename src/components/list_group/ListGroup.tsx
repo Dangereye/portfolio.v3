@@ -6,6 +6,7 @@ type ListGroupProps<T> = {
   listImage?: 'image' | '';
   renderKey: (item: T) => string;
   renderItem: (item: T) => React.ReactNode;
+  anim?: string;
 };
 
 export default function ListGroup<T>({
@@ -14,15 +15,16 @@ export default function ListGroup<T>({
   listImage = '',
   renderKey,
   renderItem,
+  anim = '',
 }: ListGroupProps<T>) {
   return (
-    <div className='list-group animate-list'>
-      <Heading3 heading={heading} anim='animate-list-item' />
+    <div className='list-group'>
+      <Heading3 heading={heading} anim={anim} />
       <ul className='list'>
         {list.map((item) => (
           <li
             key={renderKey(item)}
-            className={`list__item ${listImage} animate-list-item`}
+            className={`list__item ${listImage} ${anim}`}
           >
             {renderItem(item)}
           </li>

@@ -1,5 +1,5 @@
 // React
-import { useState, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 
 // Email JS
 import emailjs from 'emailjs-com';
@@ -31,12 +31,11 @@ import { formDefault } from '../../data/formDefault';
 import useAnimation from '../../hooks/useAnimation';
 import HeadingSection from '../text_elements/HeadingSection';
 import BodyText from '../text_elements/BodyText';
-import ListGroup from '../list_group/ListGroup';
+import useForm from '../../hooks/useForm';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
-  const [state, setState] = useState(formDefault);
-  console.log(state);
+  const { state, setState, active, setActive } = useForm();
 
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
@@ -94,61 +93,32 @@ export default function Contact() {
     });
   };
 
-  const checkName = (e: React.FocusEvent<HTMLInputElement>) => {
-    if (state.name.value.length < 1) {
-      setState((prev) => ({
-        ...prev,
-        name: { ...state.name, error_msg: 'Please enter your name.' },
-      }));
-      const target = document.querySelector("[name='name']");
-      target?.classList.add('error');
-      return;
-    }
+  // const checkEmail = (e: React.FocusEvent<HTMLInputElement>) => {
+  //   if (state.email.value.length < 1) {
+  //     setState((prev) => ({
+  //       ...prev,
+  //       email: { ...prev.email, error_msg: 'Please enter your email.' },
+  //     }));
 
-    if (state.name.value.length < 3) {
-      setState((prev) => ({
-        ...prev,
-        name: {
-          ...prev.name,
-          error_msg: '3 Characters minimum.',
-        },
-      }));
+  //     const target = document.querySelector("[name='email']");
+  //     target?.classList.add('error');
+  //     return;
+  //   }
 
-      const target = document.querySelector("[name='name']");
-      target?.classList.add('error');
-      return;
-    }
-    const target = document.querySelector("[name='name']");
-    target?.classList.remove('error');
-    target?.classList.add('success');
-  };
+  //   if (!state.email.value.includes('@')) {
+  //     setState((prev) => ({
+  //       ...prev,
+  //       email: { ...prev.email, error_msg: 'Please enter a valid email.' },
+  //     }));
 
-  const checkEmail = (e: React.FocusEvent<HTMLInputElement>) => {
-    if (state.email.value.length < 1) {
-      setState((prev) => ({
-        ...prev,
-        email: { ...prev.email, error_msg: 'Please enter your email.' },
-      }));
-
-      const target = document.querySelector("[name='email']");
-      target?.classList.add('error');
-      return;
-    }
-
-    if (!state.email.value.includes('@')) {
-      setState((prev) => ({
-        ...prev,
-        email: { ...prev.email, error_msg: 'Please enter a valid email.' },
-      }));
-
-      const target = document.querySelector("[name='email']");
-      target?.classList.add('error');
-      return;
-    }
-    const target = document.querySelector("[name='email']");
-    target?.classList.remove('error');
-    target?.classList.add('success');
-  };
+  //     const target = document.querySelector("[name='email']");
+  //     target?.classList.add('error');
+  //     return;
+  //   }
+  //   const target = document.querySelector("[name='email']");
+  //   target?.classList.remove('error');
+  //   target?.classList.add('success');
+  // };
 
   //   const checkMessage = () => {
   //     if (state.message.value.length < 1) {
@@ -247,7 +217,8 @@ export default function Contact() {
               name='name'
               value={state.name.value}
               onChange={handleUpdateInput}
-              onBlur={checkName}
+              onFocus={() => setActive('name')}
+              onBlur={() => setActive(null)}
             />
           </InputGroup>
           <InputGroup
@@ -262,7 +233,8 @@ export default function Contact() {
               name='email'
               value={state.email.value}
               onChange={handleUpdateInput}
-              onBlur={checkEmail}
+              onFocus={() => setActive('email')}
+              onBlur={() => setActive(null)}
             />
           </InputGroup>
           {/* <InputGroup

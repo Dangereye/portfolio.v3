@@ -119,18 +119,21 @@ export default function SkillsSection() {
           <ListGroup
             heading={environment.heading}
             list={environment.list}
+            listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
           />
           <ListGroup
             heading={designTools.heading}
             list={designTools.list}
+            listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
           />
           <ListGroup
             heading={frontEnd.heading}
             list={frontEnd.list}
+            listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
           />
@@ -138,6 +141,7 @@ export default function SkillsSection() {
           <ListGroup
             heading={backEnd.heading}
             list={backEnd.list}
+            listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
           />

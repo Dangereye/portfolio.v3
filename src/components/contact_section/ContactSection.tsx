@@ -60,8 +60,8 @@ export default function Contact() {
   );
 
   // Functions
-  const resetValidation = () => {
-    console.log('Resetting state');
+  const resetForm = () => {
+    console.log('Resetting Form');
     setState((prev) => ({
       ...prev,
       complete: false,
@@ -110,7 +110,7 @@ export default function Contact() {
         ...prev,
         name: {
           ...prev.name,
-          error_msg: '3 characters min.',
+          error_msg: '3 Characters minimum.',
         },
       }));
 
@@ -170,7 +170,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    resetValidation();
+    resetForm();
     //   sendMail(e);
   };
 

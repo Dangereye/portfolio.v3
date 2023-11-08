@@ -6,7 +6,7 @@ type FormInputProps = {
   name: string;
   value: string | number;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onFocus: (e: React.FocusEvent<HTMLInputElement>) => void;
+  onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void;
   onBlur: (e: React.FocusEvent<HTMLInputElement>) => void;
 };
 
@@ -16,7 +16,7 @@ export default function FormInput({
   name,
   value,
   onChange,
-  onFocus,
+  onFocus = () => {},
   onBlur,
 }: FormInputProps) {
   return (

@@ -123,32 +123,32 @@ export default function Contact() {
     target?.classList.add('success');
   };
 
-  //   const checkEmail = () => {
-  //     if (state.email.value.length < 1) {
-  //       setState((prev) => ({
-  //         ...prev,
-  //         email: { ...prev.email, error_msg: 'Please enter your email.' },
-  //       }));
+  const checkEmail = (e: React.FocusEvent<HTMLInputElement>) => {
+    if (state.email.value.length < 1) {
+      setState((prev) => ({
+        ...prev,
+        email: { ...prev.email, error_msg: 'Please enter your email.' },
+      }));
 
-  //       const target = document.querySelector("[name='email']");
-  //       target.classList.add('error');
-  //       return;
-  //     }
+      const target = document.querySelector("[name='email']");
+      target?.classList.add('error');
+      return;
+    }
 
-  //     if (!state.email.value.includes('@')) {
-  //       setState((prev) => ({
-  //         ...prev,
-  //         email: { ...prev.email, error_msg: 'Please enter a valid email.' },
-  //       }));
+    if (!state.email.value.includes('@')) {
+      setState((prev) => ({
+        ...prev,
+        email: { ...prev.email, error_msg: 'Please enter a valid email.' },
+      }));
 
-  //       const target = document.querySelector("[name='email']");
-  //       target.classList.add('error');
-  //       return;
-  //     }
-  //     const target = document.querySelector("[name='email']");
-  //     target.classList.remove('error');
-  //     target.classList.add('success');
-  //   };
+      const target = document.querySelector("[name='email']");
+      target?.classList.add('error');
+      return;
+    }
+    const target = document.querySelector("[name='email']");
+    target?.classList.remove('error');
+    target?.classList.add('success');
+  };
 
   //   const checkMessage = () => {
   //     if (state.message.value.length < 1) {
@@ -247,19 +247,9 @@ export default function Contact() {
               name='name'
               value={state.name.value}
               onChange={handleUpdateInput}
-              onFocus={() => {}}
               onBlur={checkName}
             />
           </InputGroup>
-          {/* <InputGroup
-            type='text'
-            name='name'
-            value={state.name.value}
-            handleChange={handleUpdateInput}
-            handleBlur={checkName}
-            error_msg={state.name.error_msg}
-            anim='contact-animate-form'
-          /> */}
           <InputGroup
             id='email'
             name='email'
@@ -271,9 +261,8 @@ export default function Contact() {
               type='email'
               name='email'
               value={state.email.value}
-              onChange={() => {}}
-              onFocus={() => {}}
-              onBlur={() => {}}
+              onChange={handleUpdateInput}
+              onBlur={checkEmail}
             />
           </InputGroup>
           {/* <InputGroup

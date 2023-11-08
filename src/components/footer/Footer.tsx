@@ -40,11 +40,13 @@ export default function () {
           <ListGroup
             heading='navigation'
             list={navigation}
+            renderKey={(item) => item.name}
             renderItem={(item) => <Link to={item.link}>{item.name}</Link>}
           />
           <ListGroup
             heading='connect'
             list={connect}
+            renderKey={(item) => item.name}
             renderItem={(item) => (
               <Link to={item.anchor} rel='noopener noreferrer' target='_blank'>
                 {item.name}
@@ -54,6 +56,7 @@ export default function () {
           <ListGroup
             heading='source code'
             list={sourceCode}
+            renderKey={(item) => item.name}
             renderItem={(item) => (
               <Link to={item.anchor} rel='noopener noreferrer' target='_blank'>
                 {item.name}
@@ -69,6 +72,7 @@ export default function () {
           <ListGroup
             heading='contact'
             list={contact}
+            renderKey={(item) => item.text}
             renderItem={(item) => (
               <IconText icon={item.icon} text={item.text} />
             )}

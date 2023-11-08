@@ -18,7 +18,7 @@ export default function ListGroup<T>({
       <Heading3 heading={heading} />
       <ul className='list'>
         {list.map((item) => (
-          <li key={renderKey(item)} className='list__item'>
+          <li key={renderKey(item)} className='list__item animate-list-item'>
             {renderItem(item)}
           </li>
         ))}

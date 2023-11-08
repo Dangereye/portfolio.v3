@@ -5,10 +5,10 @@ export const frontEnd = {
     'CSS3',
     'Sass',
     'JavaScript (ES6+)',
-    'TypeScript',
     'JSX',
+    'TypeScript',
+    'TSX',
     'React.js',
     'Next.js',
-    'More...',
   ],
 };

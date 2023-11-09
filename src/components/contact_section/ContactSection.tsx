@@ -25,7 +25,6 @@ import { FaSpinner } from 'react-icons/fa';
 import { EmailAddress } from '../../data/emailAddress';
 import { connect } from '../../data/connect';
 import { toastDefault } from '../../data/toastDefault';
-import { formDefault } from '../../data/formDefault';
 
 // Animation hook
 import useAnimation from '../../hooks/useAnimation';
@@ -35,7 +34,15 @@ import useForm from '../../hooks/useForm';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
-  const { state, setState, active, setActive, formComplete } = useForm();
+  const {
+    state,
+    setState,
+    active,
+    setActive,
+    formComplete,
+    handleUpdateInput,
+    handleSubmit,
+  } = useForm();
 
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
@@ -59,44 +66,6 @@ export default function Contact() {
   );
 
   // Functions
-  const resetForm = () => {
-    setState((prev) => ({
-      ...prev,
-      complete: false,
-      name: { ...prev.name, error_msg: '' },
-      email: { ...prev.email, error_msg: '' },
-      message: { ...prev.message, error_msg: '' },
-    }));
-
-    const input = document.querySelectorAll('input');
-    input?.forEach((input) => {
-      input.classList.remove('success');
-      input.classList.remove('error');
-    });
-
-    const textArea = document.querySelector('textarea');
-    textArea?.classList.remove('success');
-    textArea?.classList.remove('error');
-  };
-
-  const handleUpdateInput = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setState({
-      ...state,
-      [name]: {
-        value,
-        error_msg: '',
-      },
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    resetForm();
-    //   sendMail(e);
-  };
 
   //   const sendMail = (e) => {
   //     if (state.complete) {

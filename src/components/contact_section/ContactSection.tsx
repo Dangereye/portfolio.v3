@@ -60,7 +60,6 @@ export default function Contact() {
 
   // Functions
   const resetForm = () => {
-    console.log('Resetting Form');
     setState((prev) => ({
       ...prev,
       complete: false,
@@ -92,51 +91,6 @@ export default function Contact() {
       },
     });
   };
-
-  // const checkEmail = (e: React.FocusEvent<HTMLInputElement>) => {
-  //   if (state.email.value.length < 1) {
-  //     setState((prev) => ({
-  //       ...prev,
-  //       email: { ...prev.email, error_msg: 'Please enter your email.' },
-  //     }));
-
-  //     const target = document.querySelector("[name='email']");
-  //     target?.classList.add('error');
-  //     return;
-  //   }
-
-  //   if (!state.email.value.includes('@')) {
-  //     setState((prev) => ({
-  //       ...prev,
-  //       email: { ...prev.email, error_msg: 'Please enter a valid email.' },
-  //     }));
-
-  //     const target = document.querySelector("[name='email']");
-  //     target?.classList.add('error');
-  //     return;
-  //   }
-  //   const target = document.querySelector("[name='email']");
-  //   target?.classList.remove('error');
-  //   target?.classList.add('success');
-  // };
-
-  //   const checkMessage = () => {
-  //     if (state.message.value.length < 1) {
-  //       setState((prev) => ({
-  //         ...prev,
-  //         message: { ...prev.message, error_msg: 'Please enter your message.' },
-  //       }));
-
-  //       const target = document.querySelector("[name='message']");
-  //       target.classList.add('error');
-  //       return;
-  //     }
-
-  //     const target = document.querySelector("[name='message']");
-  //     target.classList.remove('error');
-  //     target.classList.add('success');
-  //     setState((prev) => ({ ...prev, complete: true }));
-  //   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -221,6 +175,7 @@ export default function Contact() {
               onBlur={() => setActive(null)}
             />
           </InputGroup>
+
           <InputGroup
             id='email'
             name='email'
@@ -237,15 +192,7 @@ export default function Contact() {
               onBlur={() => setActive(null)}
             />
           </InputGroup>
-          {/* <InputGroup
-            type='email'
-            name='email'
-            value={state.email.value}
-            handleChange={handleUpdateInput}
-            handleBlur={checkEmail}
-            error_msg={state.email.error_msg}
-            anim='contact-animate-form'
-          /> */}
+
           <InputGroup
             id='message'
             name='message'
@@ -257,18 +204,11 @@ export default function Contact() {
               name='message'
               value={state.message.value}
               onChange={handleUpdateInput}
-              onFocus={() => {}}
-              onBlur={() => {}}
+              onFocus={() => setActive('message')}
+              onBlur={() => setActive(null)}
             />
           </InputGroup>
-          {/* <TextAreaGroup
-            name='message'
-            value={state.message.value}
-            handleChange={handleUpdateInput}
-            handleBlur={checkMessage}
-            error_msg={state.message.error_msg}
-            anim='contact-animate-form'
-          /> */}
+
           <div className='btns contact-animate-form'>
             <Button
               variant={state.complete ? 'btn--primary' : 'btn--disabled'}

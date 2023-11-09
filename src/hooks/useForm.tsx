@@ -1,5 +1,5 @@
 // React
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 // Data
 import { formDefault } from '../data/formDefault';
@@ -13,8 +13,7 @@ export default function useForm() {
 
   const nameInput = document.querySelector("[name='name']");
   const emailInput = document.querySelector("[name='email']");
-
-  console.log('Focused: ', active);
+  const messageTextArea = document.querySelector("[name='message']");
 
   // Name input
   useEffect(() => {
@@ -53,13 +52,34 @@ export default function useForm() {
         return;
       }
 
-      emailInput?.classList.remove('error');
-      emailInput?.classList.add('success');
+      emailInput.classList.remove('error');
+      emailInput.classList.add('success');
     } else {
       emailInput?.classList.remove('error');
       emailInput?.classList.remove('success');
     }
   }, [state.email.value, active]);
+
+  //   Message TextArea
+  useEffect(() => {
+    if (messageTextArea && state.message.value.length && active !== 'message') {
+      if (state.message.value.length < 10) {
+        setState((prev) => ({
+          ...prev,
+          message: { ...prev.message, error_msg: '10 Characters minimum.' },
+        }));
+
+        messageTextArea.classList.add('error');
+        return;
+      }
+
+      messageTextArea.classList.remove('error');
+      messageTextArea.classList.add('success');
+    } else {
+      messageTextArea?.classList.remove('error');
+      messageTextArea?.classList.remove('success');
+    }
+  }, [state.message.value, active]);
 
   return { state, setState, active, setActive };
 }

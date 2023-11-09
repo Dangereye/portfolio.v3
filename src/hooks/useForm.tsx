@@ -15,6 +15,11 @@ export default function useForm() {
   const emailInput = document.querySelector("[name='email']");
   const messageTextArea = document.querySelector("[name='message']");
 
+  const formComplete =
+    state.name.complete && state.email.complete && state.message.complete;
+
+  console.log(state);
+
   // Name input
   useEffect(() => {
     if (nameInput && state.name.value.length && active !== 'name') {
@@ -33,9 +38,24 @@ export default function useForm() {
 
       nameInput?.classList.remove('error');
       nameInput?.classList.add('success');
+
+      setState((prev) => ({
+        ...prev,
+        name: {
+          ...prev.name,
+          complete: true,
+        },
+      }));
     } else {
       nameInput?.classList.remove('error');
       nameInput?.classList.remove('success');
+      setState((prev) => ({
+        ...prev,
+        name: {
+          ...prev.name,
+          complete: false,
+        },
+      }));
     }
   }, [state.name.value, active]);
 
@@ -54,9 +74,24 @@ export default function useForm() {
 
       emailInput.classList.remove('error');
       emailInput.classList.add('success');
+      setState((prev) => ({
+        ...prev,
+        email: {
+          ...prev.email,
+          complete: true,
+        },
+      }));
     } else {
       emailInput?.classList.remove('error');
       emailInput?.classList.remove('success');
+
+      setState((prev) => ({
+        ...prev,
+        email: {
+          ...prev.email,
+          complete: false,
+        },
+      }));
     }
   }, [state.email.value, active]);
 
@@ -75,11 +110,26 @@ export default function useForm() {
 
       messageTextArea.classList.remove('error');
       messageTextArea.classList.add('success');
+
+      setState((prev) => ({
+        ...prev,
+        message: {
+          ...prev.message,
+          complete: true,
+        },
+      }));
     } else {
       messageTextArea?.classList.remove('error');
       messageTextArea?.classList.remove('success');
+      setState((prev) => ({
+        ...prev,
+        message: {
+          ...prev.message,
+          complete: false,
+        },
+      }));
     }
   }, [state.message.value, active]);
 
-  return { state, setState, active, setActive };
+  return { state, setState, active, setActive, formComplete };
 }

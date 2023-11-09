@@ -35,7 +35,7 @@ import useForm from '../../hooks/useForm';
 
 export default function Contact() {
   const { setToast } = useContext(AppContext);
-  const { state, setState, active, setActive } = useForm();
+  const { state, setState, active, setActive, formComplete } = useForm();
 
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
@@ -211,8 +211,8 @@ export default function Contact() {
 
           <div className='btns contact-animate-form'>
             <Button
-              variant={state.complete ? 'btn--primary' : 'btn--disabled'}
-              disabled={!state.complete}
+              variant={formComplete ? 'btn--primary' : 'btn--disabled'}
+              disabled={!formComplete}
               fnc={() => {}}
             >
               <span>{state.sending ? 'Sending' : 'Send message'}</span>

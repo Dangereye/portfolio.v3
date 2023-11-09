@@ -9,6 +9,7 @@ export type toastType = {
   status: statusType;
   success_icon: React.ReactElement;
   error_icon: React.ReactElement;
+  is_active: boolean;
 };
 
 export const toastDefault = {
@@ -16,4 +17,5 @@ export const toastDefault = {
   status: 'success' as statusType,
   success_icon: <VscPassFilled />,
   error_icon: <MdOutlineError />,
+  is_active: true,
 };

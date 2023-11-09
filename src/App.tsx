@@ -10,6 +10,7 @@ import MobileNavigation from './components/mobile_navigation/MobileNavigation';
 import Main from './components/main/Main';
 import Modal from './components/modal/Modal';
 import Footer from './components/footer/Footer';
+import { Toast } from './components/toast/Toast';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <AppContextProvider>
           <Navbar />
           <Modal />
+          <Toast />
           <MobileNavigation />
           <Routes>
             <Route path='/' element={<Main />} />

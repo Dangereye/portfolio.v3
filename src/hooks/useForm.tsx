@@ -1,16 +1,20 @@
 // React
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 
 // Email JS
 import emailjs from 'emailjs-com';
 
+// Context
+
 // Data
 import { formDefault } from '../data/formDefault';
 import { EmailRegex } from '../data/emailAddress';
+import { AppContext } from '../context/appContext';
 
 type ActiveTypes = 'name' | 'email' | 'message' | null;
 
 export default function useForm() {
+  const { toast, setToast } = useContext(AppContext);
   const [state, setState] = useState(formDefault);
   const [active, setActive] = useState<ActiveTypes>(null);
 

@@ -13,11 +13,11 @@ import { MdClose } from 'react-icons/md';
 export function Toast() {
   const { toast, setToast } = useContext(AppContext);
   const closeToast = () => {
-    setToast({ ...toast, message: '', status: 'success' });
+    setToast({ ...toast, message: '', status: 'success', is_active: false });
   };
 
   return (
-    <div className={`toast ${toast.status}`}>
+    <div className={`toast ${toast.is_active ? '' : 'closed'}`}>
       <div className='container'>
         <div className='toast__message'>
           <div className='toast__icon'>

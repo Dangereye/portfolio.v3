@@ -1,0 +1,57 @@
+.toast {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  @include hoz-padding;
+  color: #fff;
+  background-color: $light-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: bottom $time, background-color $time;
+
+  z-index: 100;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &.closed {
+    bottom: -100%;
+  }
+
+  &.success {
+    background-color: $success-color;
+  }
+
+  &.error {
+    background-color: $error-color;
+  }
+
+  &__icon {
+    display: grid;
+    place-content: center;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: #fff;
+    }
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .btn {
+    color: inherit;
+  }
+}

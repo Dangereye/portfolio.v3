@@ -1,6 +1,9 @@
 // React
 import { useState, useEffect } from 'react';
 
+// Email JS
+import emailjs from 'emailjs-com';
+
 // Data
 import { formDefault } from '../data/formDefault';
 import { EmailRegex } from '../data/emailAddress';
@@ -40,10 +43,45 @@ export default function useForm() {
     messageTextArea?.classList.remove('success');
   };
 
+  const sendMail = () => {
+    setState((prev) => ({
+      ...prev,
+      sending: true,
+    }));
+
+    emailjs
+      .send(
+        'gmail',
+        'portfolio_template',
+        {
+          name: state.name.value,
+          email: state.email.value,
+          message: state.message.value,
+        },
+        `${process.env.REACT_APP_EMAIL_KEY}`
+      )
+      .then(
+        (result) => {
+          //   useToast('Message sent!', 'success');
+          console.log('success');
+          resetForm();
+        },
+        (error) => {
+          //   useToast('Message failed! Please, try again.', 'error');
+          console.log('Error');
+          setState((prev) => ({
+            ...prev,
+            sending: false,
+          }));
+        }
+      );
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    resetForm();
-    //   sendMail(e);
+    // resetForm();
+
+    sendMail();
   };
 
   // Name input

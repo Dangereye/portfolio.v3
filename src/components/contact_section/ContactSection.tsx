@@ -1,12 +1,3 @@
-// React
-import { useState, useEffect, useContext } from 'react';
-
-// Email JS
-import emailjs from 'emailjs-com';
-
-// Context
-import { AppContext } from '../../context/appContext';
-
 // Components
 import InputGroup from './input_group/InputGroup';
 import FormInput from './inputs/FormInput';
@@ -14,35 +5,24 @@ import TextArea from './inputs/TextArea';
 import Button from '../buttons/Button';
 import IconText from '../text_elements/icon_text/IconText';
 import SocialIcons from './social_icons/SocialIcons';
-// import ArticleHeading from '../../components/ArticleHeading';
+import HeadingSection from '../text_elements/HeadingSection';
+import BodyText from '../text_elements/BodyText';
 
 // Icons
-import { MdEmail, MdOutlineError } from 'react-icons/md';
-import { VscPassFilled } from 'react-icons/vsc';
+import { MdEmail } from 'react-icons/md';
 import { FaSpinner } from 'react-icons/fa';
 
 // Data
 import { EmailAddress } from '../../data/emailAddress';
 import { connect } from '../../data/connect';
-import { toastDefault } from '../../data/toastDefault';
 
 // Animation hook
 import useAnimation from '../../hooks/useAnimation';
-import HeadingSection from '../text_elements/HeadingSection';
-import BodyText from '../text_elements/BodyText';
 import useForm from '../../hooks/useForm';
 
 export default function Contact() {
-  const { setToast } = useContext(AppContext);
-  const {
-    state,
-    setState,
-    active,
-    setActive,
-    formComplete,
-    handleUpdateInput,
-    handleSubmit,
-  } = useForm();
+  const { state, setActive, formComplete, handleUpdateInput, handleSubmit } =
+    useForm();
 
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
@@ -66,36 +46,6 @@ export default function Contact() {
   );
 
   // Functions
-
-  //   const sendMail = (e) => {
-  //     if (state.complete) {
-  //       setState((prev) => ({
-  //         ...prev,
-  //         sending: true,
-  //       }));
-  //       emailjs
-  //         .sendForm(
-  //           'gmail',
-  //           'portfolio_template',
-  //           e.target,
-  //           `${process.env.NEXT_PUBLIC_EMAIL_JS_KEY}`
-  //         )
-  //         .then(
-  //           (result) => {
-  //             useToast('Message sent!', 'success', <VscPassFilled />);
-  //             resetValidation();
-  //             setState(formDefault);
-  //           },
-  //           (error) => {
-  //             useToast(
-  //               'Message failed! Please, try again.',
-  //               'error',
-  //               <MdOutlineError />
-  //             );
-  //           }
-  //         );
-  //     }
-  //   };
 
   //   const useToast = (message, status) => {
   //     setToast({ message, status });

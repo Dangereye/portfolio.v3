@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 
   border: none;
   border-radius: 5rem;
@@ -41,7 +42,9 @@
 
   cursor: pointer;
 
-  &__icon {
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
     display: grid;
     place-content: center;
 

@@ -186,7 +186,7 @@ export default function Contact() {
             >
               <span>{state.sending ? 'Sending' : 'Send message'}</span>
               {state.sending ? (
-                <span className='spinner'>
+                <span className='icon spinner'>
                   <FaSpinner />
                 </span>
               ) : null}

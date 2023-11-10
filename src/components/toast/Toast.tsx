@@ -10,7 +10,7 @@ import Button from '../buttons/Button';
 // Icons
 import { MdClose } from 'react-icons/md';
 
-export function Toast() {
+export default function Toast() {
   const { toast, setToast } = useContext(AppContext);
   const closeToast = () => {
     setToast({ ...toast, message: '', status: 'success', is_active: false });

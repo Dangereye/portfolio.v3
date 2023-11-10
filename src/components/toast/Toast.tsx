@@ -17,7 +17,7 @@ export function Toast() {
   };
 
   return (
-    <div className={`toast ${toast.is_active ? '' : 'closed'}`}>
+    <div className={`toast ${toast.status} ${toast.is_active ? '' : 'closed'}`}>
       <div className='container'>
         <div className='toast__message'>
           <div className='toast__icon'>

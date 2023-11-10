@@ -6,7 +6,6 @@
   padding: 2rem;
   @include hoz-padding;
   color: #fff;
-  background-color: $light-color;
 
   display: flex;
   align-items: center;
@@ -20,6 +19,11 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
 
   &.closed {
@@ -48,7 +52,8 @@
   &__message {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 1rem;
+    line-height: 1.4;
   }
 
   .btn {

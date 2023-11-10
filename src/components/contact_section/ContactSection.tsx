@@ -45,15 +45,6 @@ export default function Contact() {
     { x: 0, opacity: 1, stagger: 0.05, duration: 0.6, ease: 'power2.Out' }
   );
 
-  // Functions
-
-  //   const useToast = (message, status) => {
-  //     setToast({ message, status });
-  //     setTimeout(() => {
-  //       setToast(toastDefault);
-  //     }, 6000);
-  //   };
-
   return (
     <section className='section contact-section' id='contact'>
       <div className='container'>

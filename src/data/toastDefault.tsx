@@ -17,5 +17,5 @@ export const toastDefault = {
   status: 'success' as statusType,
   success_icon: <VscPassFilled />,
   error_icon: <MdOutlineError />,
-  is_active: true,
+  is_active: false,
 };

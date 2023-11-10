@@ -14,7 +14,7 @@ import { AppContext } from '../context/appContext';
 type ActiveTypes = 'name' | 'email' | 'message' | null;
 
 export default function useForm() {
-  const { toast, setToast } = useContext(AppContext);
+  const { setToast } = useContext(AppContext);
   const [state, setState] = useState(formDefault);
   const [active, setActive] = useState<ActiveTypes>(null);
 
@@ -66,13 +66,21 @@ export default function useForm() {
       )
       .then(
         (result) => {
-          //   useToast('Message sent!', 'success');
-          console.log('success');
+          setToast((prev) => ({
+            ...prev,
+            message: 'Message sent successfully. Thank you!',
+            status: 'success',
+            is_active: true,
+          }));
           resetForm();
         },
         (error) => {
-          //   useToast('Message failed! Please, try again.', 'error');
-          console.log('Error');
+          setToast((prev) => ({
+            ...prev,
+            message: 'Message failed. Please, try again.',
+            status: 'error',
+            is_active: true,
+          }));
           setState((prev) => ({
             ...prev,
             sending: false,
@@ -83,8 +91,6 @@ export default function useForm() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // resetForm();
-
     sendMail();
   };
 

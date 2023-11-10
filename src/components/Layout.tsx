@@ -11,6 +11,7 @@ import Navbar from './navbar/Navbar';
 import Toast from './toast/Toast';
 import Main from './main/Main';
 import Footer from './footer/Footer';
+import ErrorSection from './error_section/ErrorSection';
 
 export default function Layout() {
   usePageScroll();
@@ -22,6 +23,7 @@ export default function Layout() {
       <MobileNavigation />
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='*' element={<ErrorSection />} />
       </Routes>
       <Footer />
     </div>

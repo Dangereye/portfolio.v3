@@ -6,12 +6,11 @@ import { useLocation } from 'react-router-dom';
 
 export default function usePageScroll() {
   const location = useLocation();
+
   useEffect(() => {
     const hash = location.hash.replace('#', '') || 'hero';
     const section = document.getElementById(hash);
 
-    console.log(hash);
-    console.log(section);
     setTimeout(() => {
       window.scrollTo({
         top:
@@ -24,5 +23,6 @@ export default function usePageScroll() {
       });
     }, 10);
   });
+
   return null;
 }

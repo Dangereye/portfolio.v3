@@ -15,12 +15,12 @@ export default function ErrorSection() {
           anim='animate-error-text'
         />
         <BodyText
-          text="It looks like something went wrong. Don't worry though, these things happen from time to time. Have you tried going back to the previous page or the homepage? If that doesn't work, maybe try again later and see if the problem resolves itself."
+          text="It looks like something went wrong. Don't worry though, these things happen from time to time. Have you tried going back to the homepage? If that doesn't work, maybe try again later and see if the problem resolves itself."
           anim='animate-error-text'
         />
         <div className='btns'>
           <Link to='/' className='btn btn--primary'>
-            Home
+            Homepage
           </Link>
         </div>
       </div>

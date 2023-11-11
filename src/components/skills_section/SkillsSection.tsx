@@ -110,7 +110,7 @@ export default function SkillsSection() {
                 frameworks, and libraries, which enable me to create exceptional
                 websites and applications that meet all your requirements.
                 Additionally, I have some experience with back-end technologies
-                such as DB connections, routing, schemas, etc.
+                such as database connections, routing, schemas, etc.
               </>
             }
             anim='skills-animate-text'

@@ -7,7 +7,7 @@ $mobile: 550px;
 // Font sizes
 $h1-size: clamp(3.2rem, 5vw, 6.4rem);
 $h2-size: clamp(2.4rem, 5vw, 4.8rem);
-$h3-size: clamp(1.6rem, 3vw, 2rem);
+$h3-size: clamp(1.8rem, 3vw, 2.4rem);
 $_404-size: clamp(4rem, 6.5vw, 8rem);
 $lead-body-text-size: clamp(2.4rem, 3vw, 2.8rem);
 $body-text-size: clamp(1.6rem, 3vw, 2rem);
@@ -26,7 +26,8 @@ $body-text-dark: rgba($heading-dark, 0.7);
 $body-text-light: rgba($heading-light, 0.7);
 
 $dark-color: #132c55;
-$light-color: #3cb5e5;
+// $light-color: #3cb5e5;
+$light-color: #189fd4;
 $grey-color: #f1f2f8;
 $dark-grey-color: #cbd0d3;
 $success-color: rgb(14, 143, 79);

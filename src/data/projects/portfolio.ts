@@ -1,5 +1,5 @@
 export const portfolio = {
-  image: '/images/portfolio/portfolio-project.webp',
+  image: 'portfolio-project',
   date: 'Oct 2023',
   name: 'Portfolio',
   tech: [

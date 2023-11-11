@@ -1,5 +1,5 @@
 export const theWeather = {
-  image: '/images/portfolio/the-weather-project.webp',
+  image: 'the-weather-project',
   date: 'Mar 2021',
   name: 'The Weather',
   tech: [

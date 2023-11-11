@@ -96,7 +96,15 @@ export default function Project({ project, index }: ProjectProps) {
     <article className={`project ${getProjectAltClass(index)}`} id={id()}>
       <div className={`project__img ${id()}-animate-image`}>
         <div className='project__img__wrapper'>
-          <img src={project.image} alt={project.name} />
+          <img
+            srcSet={`/images/portfolio/${project.image}-750w.webp 750w, /images/portfolio/${project.image}-500w.webp 500w, /images/portfolio/${project.image}-300w.webp 300w`}
+            sizes='(min-width: 1840px) 750px, (min-width: 1040px) 42.31vw, (min-width: 560px) calc(4.35vw + 456px), (min-width: 380px) 300px, calc(66.67vw + 60px)'
+            src={`/images/portfolio/${project.image}-750w.webp`}
+            alt={project.name}
+            width='750px'
+            height='1029px'
+            loading='lazy'
+          />
         </div>
       </div>
       <div className='project__details'>

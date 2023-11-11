@@ -1,5 +1,5 @@
 export const starWars = {
-  image: '/images/portfolio/star-wars-project.webp',
+  image: 'star-wars-project',
   date: 'Oct 2022',
   name: 'Star Wars',
   tech: [

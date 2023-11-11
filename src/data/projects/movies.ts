@@ -1,5 +1,5 @@
 export const movies = {
-  image: '/images/portfolio/movies-project.webp',
+  image: 'movies-project',
   date: 'Dec 2022',
   name: 'Movies',
   tech: [

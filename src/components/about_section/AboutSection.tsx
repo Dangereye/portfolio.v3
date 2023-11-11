@@ -46,10 +46,13 @@ export default function AboutSection() {
         <div className='image about-animate-image'>
           <div className='image__wrapper'>
             <img
-              src='/images/about/profile.webp'
-              alt='Craig puxty'
-              width='500px'
-              height='500px'
+              srcSet='/images/about/profile-260w.webp 260w, /images/about/profile-550w.webp 550w'
+              sizes='(min-width: 1360px) 550px, (min-width: 980px) 41.67vw, (min-width: 700px) 550px, (min-width: 560px) calc(58.33vw + 153px), calc(100vw - 40px)'
+              src='/images/about/profile-550x550.webp'
+              alt='Craig Puxty'
+              width='550px'
+              height='550px'
+              loading='lazy'
             />
           </div>
         </div>

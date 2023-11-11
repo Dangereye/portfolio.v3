@@ -74,7 +74,7 @@ export default function SkillsSection() {
           <BodyText
             text={
               <>
-                Experienced in building static websites,{' '}
+                I am highly skilled in developing static websites,{' '}
                 <Link
                   to='https://reactjs.org'
                   rel='noopener noreferrer'
@@ -90,7 +90,7 @@ export default function SkillsSection() {
                 >
                   Next.js
                 </Link>{' '}
-                applications, and customisation of eCommerce platforms such as{' '}
+                applications, and customising eCommerce platforms like{' '}
                 <Link
                   to='https://business.adobe.com/uk/products/magento/magento-commerce.html'
                   rel='noopener noreferrer'
@@ -106,10 +106,11 @@ export default function SkillsSection() {
                 >
                   WordPress
                 </Link>
-                . Listed are typical environmental setup and design tools,
-                frequently used front-end technologies, frameworks and
-                libraries. I also have some experience with back-end
-                technologies - DB connection, routing, schemas etc.
+                . My expertise includes an array of front-end technologies,
+                frameworks, and libraries, which enable me to create exceptional
+                websites and applications that meet all your requirements.
+                Additionally, I have some experience with back-end technologies
+                such as DB connections, routing, schemas, etc.
               </>
             }
             anim='skills-animate-text'

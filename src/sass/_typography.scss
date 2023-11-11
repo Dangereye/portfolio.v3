@@ -14,10 +14,9 @@ html {
   &--h1,
   &--h2,
   &--h3,
-  &--lead,
-  &--404 {
+  &--lead {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
+    line-height: 1.4;
 
     &::first-letter {
       text-transform: capitalize;
@@ -25,8 +24,7 @@ html {
   }
 
   &--h1,
-  &--h2,
-  &--404 {
+  &--h2 {
     color: $heading-dark;
     font-weight: 700;
   }
@@ -48,10 +46,6 @@ html {
   &--h3,
   &--lead {
     font-size: $h3-size;
-  }
-
-  &--404 {
-    font-size: $_404-size;
   }
 }
 

@@ -68,7 +68,7 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text='Hi there, my name is Craig Puxty - a front-end developer based in Flintshire, North Wales, UK. Specialising in React.js development with a passion to creating modern, stunning software solutions that boast top-notch performance, scalability, accessibility, and fully responsive behaviour.'
+            text='Hi there, my name is Craig Puxty - a front-end developer based in Flintshire, North Wales, UK. I specialise in React.js development with a passion for creating modern, stunning software solutions that boast top-notch performance, scalability, accessibility, and fully responsive behaviour.'
             anim='about-animate-text'
           />
           <BodyText

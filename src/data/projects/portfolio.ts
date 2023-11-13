@@ -32,7 +32,7 @@ export const portfolio = {
     },
   ],
   description:
-    'A summary of my knowledge, current services offered, preferences and intentions. Also, providing a convenient way to view my latest work live and take a peek behind the scenes - while allowing further expansion and development of my skills and experience.',
+    'Providing a brief overview of my identity, expertise, and current services offered to prospective clients and employers. I believe that by presenting a clear and detailed description of my skills, knowledge, and experience, I can establish myself as a trusted and reliable source of high-quality work. Furthermore, I am committed to continuously refining and expanding my skills, staying up-to-date with the latest industry developments and best practices to deliver innovative and creative solutions.',
   apis: null,
   third_party: [
     {

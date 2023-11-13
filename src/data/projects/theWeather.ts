@@ -20,7 +20,7 @@ export const theWeather = {
     },
   ],
   description:
-    'Check the forecast where you are - using Geolocation. Alternatively, perform manual searches - elsewhere! Forecasts include conditions, precipitation and wind (displayed hourly) in a format that suits you. The presentation includes dynamic imagery, courtesy of Unsplash - which matches (somewhat reliably) current weather conditions.',
+    "Don't get caught off guard by the weather! Check the forecast for your current location easily using Geolocation. Or, if you prefer, you can manually search for weather updates anywhere else. Forecasts are updated hourly and include details on conditions, precipitation, and wind, all presented in a format that suits you. Additionally, enjoy dynamic background imagery provided by Unsplash, which matches current weather conditions - somewhat reliably.",
   apis: [
     { name: 'Weather', anchor: 'https://www.weatherapi.com/' },
     { name: 'Unsplash', anchor: 'https://unsplash.com/developers' },

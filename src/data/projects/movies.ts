@@ -26,7 +26,7 @@ export const movies = {
     },
   ],
   description:
-    "Search and explore millions of movies, television shows and personalities. Browse upcoming releases, rediscover favourites, and stay up-to-date on the latest trends. Use our filters to find exactly what you're looking for, including trailers, teasers, ratings, and reviews. With endless options, you'll never run out of things to watch.",
+    "Looking for your next binge-watch? Search and explore millions of movies, television shows and personalities. Browse upcoming releases, rediscover favourites, and stay up-to-date on the latest trends. With our filters, you can easily find what you're looking for, including trailers, posters, biographies, ratings, reviews and more... And with endless options, you'll never run out of things to watch.",
   apis: [
     { name: 'TMDB', anchor: 'https://www.themoviedb.org/documentation/api' },
     {

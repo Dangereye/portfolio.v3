@@ -68,26 +68,15 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text="Hi! I'm Craig Puxty, a bespoke front-end developer from a small town
-            in Flintshire, North Wales, UK."
+            text="Hi there, I'm Craig Puxty, a front-end developer based in Flintshire, North Wales, UK. I specialize in React.js development and I'm passionate about creating modern and stunning software solutions that deliver top-notch performance, scalability, and accessibility."
             anim='about-animate-text'
           />
           <BodyText
-            text="Over several years, I've dedicated much of my free time to gaining
-            proficiency in several front-end technologies and design tools,
-            together with some back-end knowledge."
+            text="Over the years, I've invested a lot of time and effort into honing my skills in a variety of front-end technologies, frameworks, libraries, and design tools. My attention to detail is second to none, and I follow fundamental design principles such as KISS, DRY, simple navigation, visual hierarchy, and consistency to ensure that my projects are of the highest quality."
             anim='about-animate-text'
           />
           <BodyText
-            text="My development process is meticulous, following fundamental design
-            principles: keep it simple, stupid (KISS), don't repeat yourself
-            (DRY), simple navigation, visual hierarchy, consistency, etc."
-            anim='about-animate-text'
-          />
-          <BodyText
-            text="My mission is to create beautiful, modern software with custom,
-            high-quality imagery - that's accessible, scalable, responsive and
-            performance-driven."
+            text="My main goal is to deliver custom-made, user-friendly, and visually appealing software solutions that exceed expectations. I take pride in my work and always strive to produce high-quality imagery that is tailored to each project's unique needs."
             anim='about-animate-text'
           />
 

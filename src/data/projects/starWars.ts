@@ -26,7 +26,7 @@ export const starWars = {
     },
   ],
   description:
-    'Explore the galaxy! Discover films, people, species, planets, starships and vehicles from the first seven (at the time of writing) films. Features include infinite data loading on scroll, data caching via React Query and bespoke (not included with data) imagery. Utilising a simple and somewhat familiar API - this project was an opportunity to practice and develop my understanding of TypeScript after recently taking my first steps with it.',
+    "Ready to embark on an exciting journey to a galaxy far, far away? There's so much to discover and explore, from fascinating people and species to planets, starships, and vehicles from the first seven movies. And to make things even better, I've added some stylised imagery that complements the look and feel of the site, which you won't find anywhere else. So, what are you waiting for? Let's go on an adventure!",
   apis: [
     { name: 'SWAPI', anchor: 'https://swapi.py4e.com/' },
     {

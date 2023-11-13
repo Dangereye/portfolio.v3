@@ -68,15 +68,15 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text="Hi there, I'm Craig Puxty, a front-end developer based in Flintshire, North Wales, UK. I specialize in React.js development and I'm passionate about creating modern and stunning software solutions that deliver top-notch performance, scalability, and accessibility."
+            text='Hi there, my name is Craig Puxty - a front-end developer based in Flintshire, North Wales, UK. Specialising in React.js development with a passion to creating modern, stunning software solutions that boast top-notch performance, scalability, accessibility, and fully responsive behaviour.'
             anim='about-animate-text'
           />
           <BodyText
-            text="Over the years, I've invested a lot of time and effort into honing my skills in a variety of front-end technologies, frameworks, libraries, and design tools. My attention to detail is second to none, and I follow fundamental design principles such as KISS, DRY, simple navigation, visual hierarchy, and consistency to ensure that my projects are of the highest quality."
+            text="Over the years, I've invested considerable time and effort into honing my skills in various front-end technologies and design tools. My attention to detail is second to none, following fundamental principles such as KISS, DRY, simple navigation, visual hierarchy, and consistency to ensure that my projects are of the highest quality."
             anim='about-animate-text'
           />
           <BodyText
-            text="My main goal is to deliver custom-made, user-friendly, and visually appealing software solutions that exceed expectations. I take pride in my work and always strive to produce high-quality imagery that is tailored to each project's unique needs."
+            text='I take great pride in my work and strive to produce high-quality, bespoke, user-friendly, and visually appealing software that exceeds expectations.'
             anim='about-animate-text'
           />
 

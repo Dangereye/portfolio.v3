@@ -1,6 +1,3 @@
-// React
-import { useContext } from 'react';
-
 // React router
 import { Link } from 'react-router-dom';
 
@@ -22,7 +19,7 @@ import { contact } from '../../data/contact';
 // Icons
 import { BiArrowToTop } from 'react-icons/bi';
 
-export default function () {
+export default function Footer() {
   const { downloadCV } = useModal();
 
   return (

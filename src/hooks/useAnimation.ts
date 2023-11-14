@@ -30,7 +30,7 @@ export default function useAnimation(
         }
       );
     }
-  }, [id]);
+  }, [id, trigger, from, to]);
 
   return null;
 }

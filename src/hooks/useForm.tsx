@@ -132,7 +132,7 @@ export default function useForm() {
         },
       }));
     }
-  }, [state.name.value, active]);
+  }, [state.name.value, active, nameInput]);
 
   // Email input
   useEffect(() => {
@@ -169,7 +169,7 @@ export default function useForm() {
         },
       }));
     }
-  }, [state.email.value, active]);
+  }, [state.email.value, active, emailInput]);
 
   //   Message TextArea
   useEffect(() => {
@@ -206,7 +206,7 @@ export default function useForm() {
         },
       }));
     }
-  }, [state.message.value, active]);
+  }, [state.message.value, active, messageTextArea]);
 
   return {
     state,

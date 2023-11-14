@@ -30,7 +30,8 @@ export default function useAnimation(
         }
       );
     }
-  }, [id, trigger, from, to]);
+    // eslint-disable-next-line
+  }, [id]);
 
   return null;
 }

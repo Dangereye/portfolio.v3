@@ -53,5 +53,5 @@ export const portfolio = {
     },
   ],
   project__anchor: null,
-  repo__anchor: 'https://github.com/Dangereye/portfolio-v2',
+  repo__anchor: 'https://github.com/Dangereye/portfolio.v3',
 };

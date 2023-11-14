@@ -10,6 +10,7 @@ import MobileIcon from './mobile_icon/MobileIcon';
 
 // Data
 import { navigation } from '../../data/navigation';
+import Logo from '../../svgs/Logo';
 
 export default function Navbar() {
   // useAnimation(element id,trigger id,{from options},{to options})
@@ -24,7 +25,8 @@ export default function Navbar() {
     <header className='navbar' id='navbar'>
       <div className='container navbar-animate'>
         <Link to='/' className='logo'>
-          Craig Puxty
+          <Logo />
+          <span className='logo__text'>Craig Puxty</span>
         </Link>
         <Navigation array={navigation} />
         <MobileIcon />

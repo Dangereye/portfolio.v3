@@ -30,7 +30,7 @@ export const portfolio = {
     },
   ],
   description:
-    "Offering a concise snapshot of my identity, proficiency, and current array of services for potential clients and employers. I'm confident that articulating a well-defined and comprehensive account of my capabilities, expertise, and personal journey will highlight me as a dependable and credible provider of top",
+    "Offering a concise snapshot of my identity, proficiency, and current array of services for potential clients and employers. I'm confident that articulating a well-defined and comprehensive account of my capabilities, expertise, and personal journey will highlight me as a dependable and credible provider of top-tier work. Moreover, I'm dedicated to consistently enhancing and broadening my skill set, remaining abreast of the most recent industry advancements and optimal approaches to ensure the delivery of inventive and practical solutions.",
   apis: null,
   third_party: [
     {

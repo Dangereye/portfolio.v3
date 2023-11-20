@@ -4,12 +4,10 @@ export const portfolio = {
   name: 'Portfolio',
   tech: [
     { image: '/svg/html5.svg', name: 'HTML5', width: '34.29', height: '40' },
-    { image: '/svg/css3.svg', name: 'CSS3', width: '34.29', height: '40' },
-    { image: '/svg/sass.svg', name: 'SCSS', width: '53.38', height: '40' },
     {
-      image: '/svg/js.svg',
-      name: 'JavaScript ES6+',
-      width: '40',
+      image: '/svg/sass.svg',
+      name: 'SCSS: 1.69.3',
+      width: '53.38',
       height: '40',
     },
     {
@@ -32,7 +30,7 @@ export const portfolio = {
     },
   ],
   description:
-    'Providing a brief overview of my identity, expertise, and current services offered to prospective clients and employers. I believe that by presenting a clear and detailed description of my skills, knowledge, and experience, I can establish myself as a trusted and reliable source of high-quality work. Furthermore, I am committed to continuously refining and expanding my skills, staying up-to-date with the latest industry developments and best practices to deliver innovative and creative solutions.',
+    "Offering a concise snapshot of my identity, proficiency, and current array of services for potential clients and employers. I'm confident that articulating a well-defined and comprehensive account of my capabilities, expertise, and personal journey will highlight me as a dependable and credible provider of top",
   apis: null,
   third_party: [
     {

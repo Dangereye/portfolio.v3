@@ -4,12 +4,10 @@ export const starWars = {
   name: 'Star Wars',
   tech: [
     { image: '/svg/html5.svg', name: 'HTML5', width: '34.29', height: '40' },
-    { image: '/svg/css3.svg', name: 'CSS3', width: '34.29', height: '40' },
-    { image: '/svg/sass.svg', name: 'SCSS', width: '53.38', height: '40' },
     {
-      image: '/svg/js.svg',
-      name: 'JavaScript ES6+',
-      width: '40',
+      image: '/svg/sass.svg',
+      name: 'SCSS: 1.55.0',
+      width: '53.38',
       height: '40',
     },
     {
@@ -21,6 +19,12 @@ export const starWars = {
     {
       image: '/svg/react.svg',
       name: 'React: 18.2.0',
+      width: '45.71',
+      height: '40',
+    },
+    {
+      image: '/svg/react-query.svg',
+      name: 'React query: 4.12.0',
       width: '45.71',
       height: '40',
     },

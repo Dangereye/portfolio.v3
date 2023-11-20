@@ -4,12 +4,10 @@ export const movies = {
   name: 'Movies',
   tech: [
     { image: '/svg/html5.svg', name: 'HTML5', width: '34.29', height: '40' },
-    { image: '/svg/css3.svg', name: 'CSS3', width: '34.29', height: '40' },
-    { image: '/svg/sass.svg', name: 'SCSS', width: '53.38', height: '40' },
     {
-      image: '/svg/js.svg',
-      name: 'JavaScript ES6+',
-      width: '40',
+      image: '/svg/sass.svg',
+      name: 'SCSS: 1.57.0',
+      width: '53.38',
       height: '40',
     },
     {
@@ -24,9 +22,16 @@ export const movies = {
       width: '45.71',
       height: '40',
     },
+
+    {
+      image: '/svg/react-query.svg',
+      name: 'React query: 4.20.4',
+      width: '45.71',
+      height: '40',
+    },
   ],
   description:
-    "Looking for your next binge-watch? Search and explore millions of movies, television shows and personalities. Browse upcoming releases, rediscover favourites, and stay up-to-date on the latest trends. With our filters, you can easily find what you're looking for, including trailers, posters, biographies, ratings, reviews and more... And with endless options, you'll never run out of things to watch.",
+    "On the lookout for your next binge-watch? Explore millions of movies, television shows, and intriguing personalities with the help of the tmdb API. Browse upcoming releases, rediscover your love for old favourites, and stay up-to-date on the latest trends. Thanks to user-friendly filters, finding what you're looking for is a breeze, from trailers and posters to biographies, ratings, reviews, and more. With a decent variety, you won't run out of excuses to procrastinate. Get ready for a binge-watching experience like no other!",
   apis: [
     { name: 'TMDB', anchor: 'https://www.themoviedb.org/documentation/api' },
     {

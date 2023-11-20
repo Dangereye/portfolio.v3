@@ -4,8 +4,12 @@ export const games = {
   name: 'Games',
   tech: [
     { image: '/svg/html5.svg', name: 'HTML5', width: '34.29', height: '40' },
-    { image: '/svg/css3.svg', name: 'CSS3', width: '34.29', height: '40' },
-    { image: '/svg/sass.svg', name: 'SCSS', width: '53.38', height: '40' },
+    {
+      image: '/svg/sass.svg',
+      name: 'SCSS: 1.43.4',
+      width: '53.38',
+      height: '40',
+    },
     {
       image: '/svg/js.svg',
       name: 'JavaScript ES6+',
@@ -26,7 +30,7 @@ export const games = {
     },
   ],
   description:
-    "Get ready to explore the incredible world of gaming with an extensive database of over 500,000 games for 50 platforms, including mobile devices. I've sourced video game data from RAWG, which means you'll find comprehensive information such as videos, screenshots, descriptions, genres, ERSB ratings, Metacritic ratings, and more. Whether you're a casual player or a dedicated gamer, Games' has everything you need to discover your next favourite game. So why wait? Start exploring today and find your new gaming obsession!",
+    'Embark on an immersive gaming journey with access to an extensive database featuring over 500,000 games across 50 platforms, including mobile. This vast collection is sourced from the RAWG API, providing comprehensive details such as videos, screenshots, descriptions, genres, ESRB ratings, Metacritic scores, and more. Begin your exploration today and uncover your next gaming obsession!',
   apis: [
     { name: 'RAWG', anchor: 'https://rawg.io/apidocs' },
 

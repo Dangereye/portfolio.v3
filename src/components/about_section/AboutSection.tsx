@@ -68,15 +68,15 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text='Hi there, my name is Craig Puxty - a front-end developer based in Flintshire, North Wales, UK. I specialise in React.js development with a passion for creating modern, stunning software solutions that boast top-notch performance, scalability, accessibility, and fully responsive behaviour.'
+            text="Hi there, I'm Craig Puxty, a front-end developer based in Flintshire, North Wales, UK. I specialise in React.js development with a passion for creating modern, stunning software solutions that boast top-notch performance, scalability, accessibility, and fully responsive behaviour."
             anim='about-animate-text'
           />
           <BodyText
-            text="Over the years, I've invested considerable time and effort into honing my skills in various front-end technologies and design tools. My attention to detail is second to none, following fundamental principles such as KISS, DRY, simple navigation, visual hierarchy, and consistency to ensure that my projects are of the highest quality."
+            text='Throughout numerous years, I have dedicated substantial time and effort to continually enhance and broaden my expertise in front-end technologies, including HTML, CSS/Sass, JavaScript, TypeScript, React.js, and various design tools.'
             anim='about-animate-text'
           />
           <BodyText
-            text='I take great pride in my work and strive to produce high-quality, bespoke, user-friendly, and visually appealing software that exceeds expectations.'
+            text='My commitment to excellence is evident in my work, where I adhere to fundamental principles such as straightforward navigation, visual hierarchy, and consistency. I take pride in delivering high-quality, tailor-made, user-friendly, and visually appealing software, as showcased in my completed projects.'
             anim='about-animate-text'
           />
 

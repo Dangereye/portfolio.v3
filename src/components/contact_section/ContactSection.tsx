@@ -16,7 +16,7 @@ import { FaSpinner } from 'react-icons/fa';
 import { EmailAddress } from '../../data/emailAddress';
 import { connect } from '../../data/connect';
 
-// Animation hook
+// Hooks
 import useAnimation from '../../hooks/useAnimation';
 import useForm from '../../hooks/useForm';
 

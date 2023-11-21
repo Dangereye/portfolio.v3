@@ -147,7 +147,7 @@ export default function Project({ project, index }: ProjectProps) {
             rel='noopener noreferrer'
             target='_blank'
           >
-            view on Github
+            view more on github
           </Link>
         </div>
       </div>

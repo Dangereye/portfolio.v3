@@ -6,15 +6,17 @@ Offering a concise snapshot of my identity, proficiency, and current array of se
 
 Aimed to integrate contemporary, responsive design, graceful aesthetics, seamless transitions, and user-friendly features to swiftly deliver comprehensive information to both technical and non-technical audiences.
 
-## features
+## Features
 
 - Single page application (SPA)
-- Responsive design
-- Navigate / smooth scroll to sections
+- Responsive layout & images
+- Bespoke SVG icons
+- Mobile menu - able to be toggled to save space on smaller screens
+- Navigation - smooth scroll on click to relevant sections
 - Gsap animation & scroll triggers
-- Modal
-- Toast
-- Tooltips
+- Modal - to confirm action to download curriculum vitae
+- Toast - to explain form status
+- Tooltips - to help identify icons
 - Curriculum vitae download (PDF format)
 - Contact form
 
@@ -23,7 +25,6 @@ Aimed to integrate contemporary, responsive design, graceful aesthetics, seamles
 - HTML5
 - Sass / Scss
 - TypeScript
-- SVGs
 - React
 
 ## Third party

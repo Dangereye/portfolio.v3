@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# Portfolio.v3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Offering a concise snapshot of my identity, proficiency, and current array of services for potential clients and employers. I'm confident that articulating a well-defined and comprehensive account of my capabilities, expertise, and personal journey will highlight me as a dependable and credible provider of top-tier work. Moreover, I'm dedicated to consistently enhancing and broadening my skill set, remaining abreast of the most recent industry advancements and optimal approaches to ensure the delivery of inventive and practical solutions.
 
-## Available Scripts
+## Design
 
-In the project directory, you can run:
+Aimed to integrate contemporary, responsive design, graceful aesthetics, seamless transitions, and user-friendly features to swiftly deliver comprehensive information to both technical and non-technical audiences.
 
-### `npm start`
+## features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Single page application (SPA)
+- Responsive design
+- Navigate / smooth scroll to sections
+- Gsap animation & scroll triggers
+- Modal
+- Toast
+- Tooltips
+- Curriculum vitae download (PDF format)
+- Contact form
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- HTML5
+- Sass / Scss
+- TypeScript
+- SVGs
+- React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Third party
 
-### `npm run build`
+- React icons
+- React router
+- Gsap
+- EmailJS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Design tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Adobe Photoshop
+- Adobe Illustrator

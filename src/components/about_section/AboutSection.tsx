@@ -68,15 +68,15 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text="Hi there, I'm Craig Puxty, a front-end developer based in Flintshire, North Wales, UK. I specialise in React.js development with a passion for creating modern, stunning software solutions that boast top-notch performance, scalability, accessibility, and fully responsive behaviour."
+            text='Welcome to my corner of the web! I&lsquo;m a self-taught front-end developer based in Buckley, Flintshire, UK, embodying a "can do" mindset and a commitment to integrity, dependability, and meticulous work. Over the past three years, I&lsquo;ve immersed myself in React.js, showcasing not just coding skills but a tenacious problem-solving attitude.'
             anim='about-animate-text'
           />
           <BodyText
-            text='Throughout numerous years, I have dedicated substantial time and effort to continually enhance and broaden my expertise in front-end technologies, including HTML, CSS/Sass, JavaScript, TypeScript, React.js, and various design tools.'
+            text='My work philosophy is grounded in a strong work ethic, coupled with emotional intelligence that fosters collaboration. I excel in HTML, CSS & Sass (SCSS), JavaScript, and TypeScript, with a primary focus on coding. While coding is my forte, I occasionally explore the design realm, infusing creativity into my toolkit. Proficient in translating concepts into code, I bring a meticulous approach to crafting seamless and user-friendly experiences.'
             anim='about-animate-text'
           />
           <BodyText
-            text='My commitment to excellence is evident in my work, where I adhere to fundamental principles such as straightforward navigation, visual hierarchy, and consistency. I take pride in delivering high-quality, tailor-made, user-friendly, and visually appealing software, as showcased in my completed projects.'
+            text='What sets me apart is not just my technical prowess but the continuous journey of self-discovery and learning that fuels my passion for front-end development. I approach each project as an opportunity to grow, learn, and push boundaries. With a genuine excitement for the ever-evolving tech landscape, I&lsquo;m eager to contribute my skills to meaningful projects and explore the endless possibilities that lie ahead. Let&lsquo;s collaborate and turn ideas into remarkable digital experiences!'
             anim='about-animate-text'
           />
 

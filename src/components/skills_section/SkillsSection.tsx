@@ -10,7 +10,7 @@ import BodyText from '../text_elements/BodyText';
 import ListGroup from '../list_group/ListGroup';
 
 // Data
-import { environment } from '../../data/skills/enviroment';
+import { environment } from '../../data/skills/environment';
 import { designTools } from '../../data/skills/designTools';
 import { frontEnd } from '../../data/skills/frontEnd';
 import { backEnd } from '../../data/skills/backEnd';

@@ -63,20 +63,27 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            variant='body-text--lead'
-            text='Specialising in React.js development.'
+            text='Hello and welcome to my corner of the web! I&lsquo;m Craig Puxty, a self-taught front-end developer based in Buckley, Flintshire, UK, with a passion for creating seamless and visually appealing digital experiences. '
             anim='about-animate-text'
           />
           <BodyText
-            text='Welcome to my corner of the web! I&lsquo;m a self-taught front-end developer based in Buckley, Flintshire, UK, embodying a "can do" mindset and a commitment to integrity, dependability, and meticulous work. Over the past three years, I&lsquo;ve immersed myself in React.js, showcasing not just coding skills but a tenacious problem-solving attitude.'
+            text='My journey into the world of coding began in 2016, and although I&lsquo;m largely self-taught, I continually expand my knowledge through online courses. Proficient in HTML, CSS, JavaScript, and steadily mastering TypeScript, my focus since mid-2020 has been on React.js. I&lsquo;ve completed several small to mid-sized personal projects, showcasing my skills in functional components, hooks, reducers, and the context API. '
             anim='about-animate-text'
           />
           <BodyText
-            text='My work philosophy is grounded in a strong work ethic, coupled with emotional intelligence that fosters collaboration. I excel in HTML, CSS & Sass (SCSS), JavaScript, and TypeScript, with a primary focus on coding. While coding is my forte, I occasionally explore the design realm, infusing creativity into my toolkit. Proficient in translating concepts into code, I bring a meticulous approach to crafting seamless and user-friendly experiences.'
+            text='In addition to coding, I enjoy design and have gained proficiency in various design tools such as Photoshop, Illustrator, InDesign, and Experience Design (Xd). This enables me to easily convert designs into functional code.'
             anim='about-animate-text'
           />
           <BodyText
-            text='What sets me apart is not just my technical prowess but the continuous journey of self-discovery and learning that fuels my passion for front-end development. I approach each project as an opportunity to grow, learn, and push boundaries. With a genuine excitement for the ever-evolving tech landscape, I&lsquo;m eager to contribute my skills to meaningful projects and explore the endless possibilities that lie ahead. Let&lsquo;s collaborate and turn ideas into remarkable digital experiences!'
+            text='What excites me most about front-end development is the power to enhance user experiences. I thrive on the creative process, transforming ideas into functional and visually appealing websites that leave a lasting impression.'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text='What sets me apart is not just technical know-how but a commitment to critical thinking and problem-solving. Each project is an opportunity to grow, learn, and push boundaries.'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text='Thanks for visiting, and I look forward to the opportunity to contribute my skills to meaningful projects. If you&lsquo;re interested in collaboration or have job opportunities, feel free to contact me. Let&lsquo;s collaborate and turn ideas into extraordinary digital experiences!'
             anim='about-animate-text'
           />
 

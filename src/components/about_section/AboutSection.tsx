@@ -67,7 +67,25 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text='My journey into the world of coding began in 2016, and although I&lsquo;m largely self-taught, I continually expand my knowledge through online courses. Proficient in HTML, CSS, JavaScript, and steadily mastering TypeScript, my focus since mid-2020 has been on React.js. I&lsquo;ve completed several small to mid-sized personal projects, showcasing my skills in functional components, hooks, reducers, and the context API. '
+            text={
+              <>
+                My journey into the world of coding began in 2016, and although
+                I&lsquo;m largely self-taught, I continually expand my knowledge
+                through online courses. Proficient in HTML, CSS, JavaScript, and
+                steadily mastering TypeScript, my focus since mid-2020 has been
+                on{' '}
+                <Link
+                  to='https://reactjs.org'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  React.js
+                </Link>
+                . I&lsquo;ve completed several small to mid-sized personal
+                projects, showcasing my skills in functional components, state
+                management, hooks, reducers, and the context API.
+              </>
+            }
             anim='about-animate-text'
           />
           <BodyText

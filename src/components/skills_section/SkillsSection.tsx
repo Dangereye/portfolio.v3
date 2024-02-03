@@ -74,7 +74,8 @@ export default function SkillsSection() {
           <BodyText
             text={
               <>
-                I am highly skilled in developing static websites,{' '}
+                In addition to my personal projects, which range from static
+                sites using HTML, CSS, and vanilla JavaScript to{' '}
                 <Link
                   to='https://reactjs.org'
                   rel='noopener noreferrer'
@@ -90,7 +91,17 @@ export default function SkillsSection() {
                 >
                   Next.js
                 </Link>{' '}
-                applications, and customising eCommerce platforms like{' '}
+                applications, I&apos;ve actively engaged in freelance work,
+                successfully completing projects involving the customisation of
+                websites using Elementor for{' '}
+                <Link
+                  to='https://wordpress.com/website-builder'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  WordPress
+                </Link>{' '}
+                and{' '}
                 <Link
                   to='https://business.adobe.com/uk/products/magento/magento-commerce.html'
                   rel='noopener noreferrer'
@@ -98,19 +109,18 @@ export default function SkillsSection() {
                 >
                   Magento
                 </Link>{' '}
-                and{' '}
+                eCommerce platforms. Additionally, I&apos;ve accomplished
+                graphic design assignments, showcased on my{' '}
                 <Link
-                  to='https://wordpress.com/website-builder'
+                  to='https://www.behance.net/craig_puxty'
                   rel='noopener noreferrer'
                   target='_blank'
                 >
-                  WordPress
-                </Link>
-                . My expertise includes an array of front-end technologies,
-                frameworks, and libraries, which enable me to create exceptional
-                websites and applications that meet all your requirements.
-                Additionally, I have some experience with back-end technologies
-                such as database connections, routing, schemas, etc.
+                  Behance
+                </Link>{' '}
+                profile. Furthermore, I possess a foundational understanding of
+                back-end aspects such as database connections, routing, and
+                schemas, etc. Here are some of the skills I bring to the table:
               </>
             }
             anim='skills-animate-text'

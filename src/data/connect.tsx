@@ -1,4 +1,5 @@
-import { BsGithub, BsTwitter, BsTelegram, BsBehance } from 'react-icons/bs';
+import { BsGithub, BsTelegram, BsBehance } from 'react-icons/bs';
+import { RiTwitterXFill } from 'react-icons/ri';
 
 export const connect = [
   {
@@ -7,9 +8,9 @@ export const connect = [
     icon: <BsGithub />,
   },
   {
-    name: 'Twitter',
+    name: 'X',
     anchor: 'https://twitter.com/CraigPuxty',
-    icon: <BsTwitter />,
+    icon: <RiTwitterXFill />,
   },
   {
     name: 'Telegram',

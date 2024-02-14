@@ -109,8 +109,8 @@ export default function SkillsSection() {
                 >
                   Magento
                 </Link>{' '}
-                eCommerce platforms. Additionally, I&apos;ve accomplished
-                graphic design assignments, showcased on my{' '}
+                content management systems (CMS). Additionally, I&apos;ve
+                accomplished graphic design assignments, showcased on my{' '}
                 <Link
                   to='https://www.behance.net/craig_puxty'
                   rel='noopener noreferrer'

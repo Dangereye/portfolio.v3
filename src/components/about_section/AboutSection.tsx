@@ -109,9 +109,6 @@ export default function AboutSection() {
             <Link to='/#contact' className='btn btn--primary '>
               Contact me
             </Link>
-            <Button variant='btn--tertiary' fnc={downloadCV}>
-              <span>download curriculum vitae</span>
-            </Button>
           </div>
         </div>
       </div>

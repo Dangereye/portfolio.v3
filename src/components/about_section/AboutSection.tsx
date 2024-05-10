@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom';
 
 // Hooks
 import useAnimation from '../../hooks/useAnimation';
-import useModal from '../../hooks/useModal';
 
 // Components
-import Button from '../buttons/Button';
+
 import HeadingSection from '../text_elements/HeadingSection';
 import BodyText from '../text_elements/BodyText';
 
 export default function AboutSection() {
-  const { downloadCV } = useModal();
   // useAnimation(element id,trigger id,{from options},{to options})
   useAnimation(
     '.about-animate-image',

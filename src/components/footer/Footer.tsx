@@ -1,14 +1,9 @@
 // React router
 import { Link } from 'react-router-dom';
 
-// Hooks
-import useModal from '../../hooks/useModal';
-
 // Components
-import Heading3 from '../text_elements/Heading3';
 import ListGroup from '../list_group/ListGroup';
 import IconText from '../text_elements/icon_text/IconText';
-import Button from '../buttons/Button';
 
 // Data
 import { navigation } from '../../data/navigation';
@@ -20,8 +15,6 @@ import { contact } from '../../data/contact';
 import { BiArrowToTop } from 'react-icons/bi';
 
 export default function Footer() {
-  const { downloadCV } = useModal();
-
   return (
     <footer className='footer'>
       <Link
@@ -60,12 +53,6 @@ export default function Footer() {
               </Link>
             )}
           />
-          <div>
-            <Heading3 heading='downloads' />
-            <Button variant='btn--tertiary' fnc={downloadCV}>
-              <span>curriculum vitae</span>
-            </Button>
-          </div>
           <ListGroup
             heading='contact'
             list={contact}

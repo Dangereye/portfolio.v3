@@ -8,6 +8,8 @@ import useAnimation from '../../hooks/useAnimation';
 
 import HeadingSection from '../text_elements/HeadingSection';
 import BodyText from '../text_elements/BodyText';
+import Heading3 from '../text_elements/Heading3';
+import HeadingDiv from '../text_elements/HeadingDiv';
 
 export default function AboutSection() {
   // useAnimation(element id,trigger id,{from options},{to options})
@@ -65,25 +67,7 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text={
-              <>
-                My journey into the world of coding began in 2016, and although
-                I&lsquo;m largely self-taught, I continually expand my knowledge
-                through online courses. Proficient in HTML, CSS, JavaScript, and
-                steadily mastering TypeScript, my focus since mid-2020 has been
-                on{' '}
-                <Link
-                  to='https://reactjs.org'
-                  rel='noopener noreferrer'
-                  target='_blank'
-                >
-                  React.js
-                </Link>
-                . I&lsquo;ve completed several small to mid-sized personal
-                projects, showcasing my skills in functional components, state
-                management, hooks, reducers, and the context API.
-              </>
-            }
+            text='My journey into the world of coding began in 2010, and although I‘m largely self-taught, I continually expand my knowledge through online courses. Proficient in HTML, CSS, JavaScript, and steadily mastering TypeScript, my focus since mid-2020 has been on React.js. I‘ve completed several small to mid-sized personal projects, showcasing my skills in functional components, state management, hooks, reducers, and the context API.'
             anim='about-animate-text'
           />
           <BodyText
@@ -96,6 +80,31 @@ export default function AboutSection() {
           />
           <BodyText
             text='What sets me apart is not just technical know-how but a commitment to critical thinking and problem-solving. Each project is an opportunity to grow, learn, and push boundaries.'
+            anim='about-animate-text'
+          />
+          <Heading3
+            heading='The Next Chapter: A Shift to WordPress & Elementor Pro'
+            anim='about-animate-text'
+          />
+          <HeadingDiv
+            heading='Update: Mar 2025'
+            variant='heading--lead'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text='Over the past 17 months, my development focus has shifted from React.js towards WordPress, specifically utilising Elementor Pro to build professional, high-quality websites with greater efficiency. The time required to create React.js applications compared to the rapid development capabilities of WordPress and Elementor was a game-changer for me.'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text='One of my most notable projects during this transition was a full website redesign for a commercial & industrial heating company. This project was built from scratch using the Elementor Hello theme and Elementor Pro, allowing for a highly customised and visually engaging result while ensuring strong performance and usability.'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text='Moving into WordPress has allowed me to deliver high-quality websites faster, without compromising on functionality or design. I’ve also gained deeper insights into WordPress customisation, plugin integration, and optimising website performance, which has further strengthened my ability to create effective digital solutions for businesses.'
+            anim='about-animate-text'
+          />
+          <BodyText
+            text='Looking ahead, I’m excited to continue refining my WordPress expertise, taking on new projects that allow me to blend creativity with efficiency, and helping businesses establish strong online presences with well-crafted websites.'
             anim='about-animate-text'
           />
           <BodyText

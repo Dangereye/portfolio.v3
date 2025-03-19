@@ -74,43 +74,12 @@ export default function SkillsSection() {
           <BodyText
             text={
               <>
-                In addition to my personal projects, which range from static
-                sites using HTML, CSS, and vanilla JavaScript to{' '}
-                <Link
-                  to='https://reactjs.org'
-                  rel='noopener noreferrer'
-                  target='_blank'
-                >
-                  React.js
-                </Link>{' '}
-                and{' '}
-                <Link
-                  to='https://nextjs.org/'
-                  rel='noopener noreferrer'
-                  target='_blank'
-                >
-                  Next.js
-                </Link>{' '}
-                applications, I&apos;ve actively engaged in freelance work,
-                successfully completing projects involving the customisation of
-                websites using Elementor for{' '}
-                <Link
-                  to='https://wordpress.com/website-builder'
-                  rel='noopener noreferrer'
-                  target='_blank'
-                >
-                  WordPress
-                </Link>{' '}
-                and{' '}
-                <Link
-                  to='https://business.adobe.com/uk/products/magento/magento-commerce.html'
-                  rel='noopener noreferrer'
-                  target='_blank'
-                >
-                  Magento
-                </Link>{' '}
-                content management systems (CMS). Additionally, I&apos;ve
-                accomplished graphic design assignments, showcased on my{' '}
+                Alongside my personal projects—which range from simple static
+                sites using HTML, CSS, and vanilla JavaScript to more dynamic
+                applications built with React.js and Next.js—I’ve also taken on
+                freelance work. I’ve successfully delivered full website builds
+                using Elementor for WordPress CMS, as well as graphic design
+                projects, which you can check out on my{' '}
                 <Link
                   to='https://www.behance.net/craig_puxty'
                   rel='noopener noreferrer'
@@ -118,15 +87,23 @@ export default function SkillsSection() {
                 >
                   Behance
                 </Link>{' '}
-                profile. Furthermore, I possess a foundational understanding of
-                back-end aspects such as database connections, routing, and
-                schemas, etc. Here are some of the skills I bring to the table:
+                profile. I also have a foundational understanding of back-end
+                concepts like database connections, routing, and schemas. Here
+                are some of the key skills I bring to the table:
               </>
             }
             anim='skills-animate-text'
           />
         </div>
         <div className='lists'>
+          <ListGroup
+            heading={frontEnd.heading}
+            list={frontEnd.list}
+            listImage='image'
+            renderKey={(item) => item}
+            renderItem={(item) => item}
+            anim='skills-list-item'
+          />
           <ListGroup
             heading={environment.heading}
             list={environment.list}
@@ -136,16 +113,8 @@ export default function SkillsSection() {
             anim='skills-list-item'
           />
           <ListGroup
-            heading={designTools.heading}
-            list={designTools.list}
-            listImage='image'
-            renderKey={(item) => item}
-            renderItem={(item) => item}
-            anim='skills-list-item'
-          />
-          <ListGroup
-            heading={frontEnd.heading}
-            list={frontEnd.list}
+            heading={backEnd.heading}
+            list={backEnd.list}
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}
@@ -153,8 +122,8 @@ export default function SkillsSection() {
           />
 
           <ListGroup
-            heading={backEnd.heading}
-            list={backEnd.list}
+            heading={designTools.heading}
+            list={designTools.list}
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}

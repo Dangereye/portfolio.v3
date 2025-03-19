@@ -86,6 +86,14 @@ export default function HeroSection() {
                 >
                   React.js
                 </Link>{' '}
+                and{' '}
+                <Link
+                  to='https://wordpress.org'
+                  rel='noopener no referrer'
+                  target='_blank'
+                >
+                  WordPress
+                </Link>{' '}
                 development.
                 <br /> I love building (and occasionally designing) beautiful,
                 modern software that's accessible, scalable, responsive and

@@ -5,9 +5,19 @@
     text-align: left;
   }
 
-  .heading--h2 {
+  .heading--h2,
+  .heading--h3 {
     color: $heading-dark;
   }
+
+  .heading--h3 {
+    margin-top: 3rem;
+  }
+
+  .heading--lead {
+    font-size: $small-text-size;
+  }
+
   .container {
     display: flex;
     flex-wrap: wrap;

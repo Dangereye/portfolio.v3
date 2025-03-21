@@ -74,22 +74,24 @@ export default function SkillsSection() {
           <BodyText
             text={
               <>
-                Alongside my personal projects—which range from simple static
-                sites using HTML, CSS, and vanilla JavaScript to more dynamic
-                applications built with React.js and Next.js—I’ve also taken on
-                freelance work. I’ve successfully delivered full website builds
-                using Elementor for WordPress CMS, as well as graphic design
-                projects, which you can check out on my{' '}
+                Building on my journey from development to creative ventures,
+                I've gathered a diverse skill set that spans both front-end and
+                design, along with a foundational understanding of back-end
+                concepts. My work ranges from simple static sites using HTML,
+                CSS, and vanilla JavaScript to dynamic applications with
+                React.js and Next.js. On the freelance side, I’ve delivered a
+                commissioned WordPress website built with Elementor, along with
+                various graphic design projects (you can view these on my{' '}
                 <Link
                   to='https://www.behance.net/craig_puxty'
                   rel='noopener noreferrer'
                   target='_blank'
                 >
-                  Behance
-                </Link>{' '}
-                profile. I also have a foundational understanding of back-end
-                concepts like database connections, routing, and schemas. Here
-                are some of the key skills I bring to the table:
+                  Behance profile
+                </Link>
+                ). I also have a foundational understanding of back-end concepts
+                like database connections, routing, and schemas. Here are some
+                of the key skills I bring to the table:
               </>
             }
             anim='skills-animate-text'

@@ -15,6 +15,7 @@ import ReactSvg from '../../svgs/React';
 import CompassSvg from '../../svgs/Compass';
 import ScreenSvg from '../../svgs/Screens';
 import PerformanceSvg from '../../svgs/Performance';
+import WordPressSvg from '../../svgs/WordPress';
 
 export default function HeroSection() {
   // useAnimation(element id,trigger id,{from options},{to options})
@@ -76,43 +77,33 @@ export default function HeroSection() {
             }
           />
           <BodyText
-            text={
-              <>
-                Specialising in{' '}
-                <Link
-                  to='https://reactjs.org'
-                  rel='noopener no referrer'
-                  target='_blank'
-                >
-                  React.js
-                </Link>{' '}
-                and{' '}
-                <Link
-                  to='https://wordpress.org'
-                  rel='noopener no referrer'
-                  target='_blank'
-                >
-                  WordPress
-                </Link>{' '}
-                development.
-                <br /> I love building (and occasionally designing) beautiful,
-                modern software that's accessible, scalable, responsive and
-                performance-driven.
-              </>
-            }
+            text="Skilled in React.js and WordPress (Elementor Pro), I transform ideas into seamless web experiences. I love building and occasionally designing modern software that's accessible, scalable, responsive and built for peak performance."
             anim='hero-animate-down'
           />
           <div className='btns hero-animate-down'>
             <Link to='/#projects' className='btn btn--primary btn--large'>
-              Latest projects
+              View My Projects
             </Link>
           </div>
         </div>
         <div className='features hero-animate-up'>
-          <Feature icon={<ReactSvg />} text='React.js focused' />
-          <Feature icon={<CompassSvg />} text='Modern designs' />
-          <Feature icon={<ScreenSvg />} text='Device responsive' />
-          <Feature icon={<PerformanceSvg />} text='Performance driven' />
+          <Feature
+            icon={<WordPressSvg />}
+            textTop='WordPress'
+            textBottom='Focused'
+          />
+          <Feature icon={<ReactSvg />} textTop='React' textBottom='Savvy' />
+          <Feature icon={<CompassSvg />} textTop='Modern' textBottom='Design' />
+          <Feature
+            icon={<ScreenSvg />}
+            textTop='Device'
+            textBottom='Optimised'
+          />
+          <Feature
+            icon={<PerformanceSvg />}
+            textTop='Performance'
+            textBottom='Driven'
+          />
         </div>
       </div>
     </section>

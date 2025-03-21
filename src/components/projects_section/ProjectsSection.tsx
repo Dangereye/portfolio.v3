@@ -30,7 +30,7 @@ export default function ProjectsSection() {
     <section className='section projects-section' id='projects'>
       <div className='container'>
         <HeadingSection
-          lead='projects'
+          lead='Personal Projects'
           heading='latest work'
           anim='projects-animate-text'
         />

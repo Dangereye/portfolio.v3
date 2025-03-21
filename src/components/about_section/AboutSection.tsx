@@ -5,11 +5,9 @@ import { Link } from 'react-router-dom';
 import useAnimation from '../../hooks/useAnimation';
 
 // Components
-
 import HeadingSection from '../text_elements/HeadingSection';
-import BodyText from '../text_elements/BodyText';
 import Heading3 from '../text_elements/Heading3';
-import HeadingDiv from '../text_elements/HeadingDiv';
+import BodyText from '../text_elements/BodyText';
 
 export default function AboutSection() {
   // useAnimation(element id,trigger id,{from options},{to options})

@@ -63,58 +63,36 @@ export default function AboutSection() {
             anim='about-animate-text'
           />
           <BodyText
-            text='Hello and welcome to my corner of the web! I&lsquo;m Craig Puxty, a self-taught front-end developer based in Buckley, Flintshire, UK, with a passion for creating seamless and visually appealing digital experiences. '
+            text="Hello and welcome to my corner of the web! I'm Craig Puxty, a self-taught front-end developer and creative from Buckley, Flintshire, UK, passionate about crafting visually stunning digital experiences."
             anim='about-animate-text'
           />
+          <Heading3 heading='My Journey' anim='about-animate-text' />
           <BodyText
-            text='My journey into the world of coding began in 2010, and although I‘m largely self-taught, I continually expand my knowledge through online courses. Proficient in HTML, CSS, JavaScript, and steadily mastering TypeScript, my focus since mid-2020 has been on React.js. I‘ve completed several small to mid-sized personal projects, showcasing my skills in functional components, state management, hooks, reducers, and the context API.'
+            text="I began my journey in 2010, building a solid foundation in HTML, CSS and JavaScript while continuously expanding my skills (including TypeScript) through online courses and personal projects. For many years, I've used React.js to build engaging websites, utilising functional components, state management (with hooks, reducers and the context API) and third-party API integration for dynamic content. More recently, I've shifted my focus to WordPress, enabling me to build high-quality websites more efficiently."
             anim='about-animate-text'
           />
+          <Heading3 heading='My Creative Edge' anim='about-animate-text' />
           <BodyText
-            text='In addition to coding, I enjoy design and have gained proficiency in various design tools such as Photoshop, Illustrator, InDesign, and Experience Design (Xd). This enables me to easily convert designs into functional code.'
-            anim='about-animate-text'
-          />
-          <BodyText
-            text='What excites me most about front-end development is the power to enhance user experiences. I thrive on the creative process, transforming ideas into functional and visually appealing websites that leave a lasting impression.'
-            anim='about-animate-text'
-          />
-          <BodyText
-            text='What sets me apart is not just technical know-how but a commitment to critical thinking and problem-solving. Each project is an opportunity to grow, learn, and push boundaries.'
+            text="My experience creating digital assets, from website banners and carousel images to layouts, has refined my attention to detail. Recently, I've broadened my focus to logo design and branding, tying every element together into a cohesive visual identity."
             anim='about-animate-text'
           />
           <Heading3
-            heading='The Next Chapter: A Shift to WordPress & Elementor Pro'
-            anim='about-animate-text'
-          />
-          <HeadingDiv
-            heading='Update: Mar 2025'
-            variant='heading--lead'
+            heading='Entrepreneurial Ventures'
             anim='about-animate-text'
           />
           <BodyText
-            text='Over the past 17 months, my development focus has shifted from React.js towards WordPress, specifically utilising Elementor Pro to build professional, high-quality websites with greater efficiency. The time required to create React.js applications compared to the rapid development capabilities of WordPress and Elementor was a game-changer for me.'
+            text='Towards the end of 2024, my brother and I launched Apt.creative as a side hustle. After several months of applying for tech roles without success, I decided to create my own opportunity for extra income while further exploring my passion for both development and creative work. Apt.creative is an exciting venture where we experiment with innovative solutions while continuously refining our craft. Our website is still under construction but is gradually evolving into a vibrant showcase of our ambition and creative drive.'
             anim='about-animate-text'
           />
+          <Heading3 heading="Let's Collaborate" anim='about-animate-text' />
           <BodyText
-            text='One of my most notable projects during this transition was a full website redesign for a commercial & industrial heating company. This project was built from scratch using the Elementor Hello theme and Elementor Pro, allowing for a highly customised and visually engaging result while ensuring strong performance and usability.'
-            anim='about-animate-text'
-          />
-          <BodyText
-            text='Moving into WordPress has allowed me to deliver high-quality websites faster, without compromising on functionality or design. I’ve also gained deeper insights into WordPress customisation, plugin integration, and optimising website performance, which has further strengthened my ability to create effective digital solutions for businesses.'
-            anim='about-animate-text'
-          />
-          <BodyText
-            text='Looking ahead, I’m excited to continue refining my WordPress expertise, taking on new projects that allow me to blend creativity with efficiency, and helping businesses establish strong online presences with well-crafted websites.'
-            anim='about-animate-text'
-          />
-          <BodyText
-            text='Thanks for visiting, and I look forward to the opportunity to contribute my skills to meaningful projects. If you&lsquo;re interested in collaboration or have job opportunities, feel free to contact me. Let&lsquo;s collaborate and turn ideas into extraordinary digital experiences!'
+            text="I'm always open to new challenges, collaborations, and opportunities that push creative boundaries and expand my skill set. If you have any questions or are interested in working together, please don’t hesitate to get in touch!"
             anim='about-animate-text'
           />
 
           <div className='btns about-animate-text'>
             <Link to='/#contact' className='btn btn--primary '>
-              Contact me
+              Get in touch
             </Link>
           </div>
         </div>

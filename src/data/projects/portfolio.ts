@@ -30,7 +30,7 @@ export const portfolio = {
     },
   ],
   description:
-    "Offering a concise snapshot of my identity, proficiency, and current array of services for potential clients and employers. I'm confident that articulating a well-defined and comprehensive account of my capabilities, expertise, and personal journey will highlight me as a dependable and credible provider of top-tier work. Moreover, I'm dedicated to consistently enhancing and broadening my skill set, remaining abreast of the most recent industry advancements and optimal approaches to ensure the delivery of inventive and practical solutions.",
+    "This site (yes, the one you're on) is a snapshot of who I am, what I do, and how I work. It’s designed to showcase my skills, highlight my services, and give potential clients or employers a clear, honest look at my experience and approach. I’ve built it to be clean, responsive and performance focused, with room to evolve as I continue to grow. I believe a well crafted portfolio should speak for itself, and mine is no exception. From the way it's structured to the tools under the hood, everything here reflects my commitment to building thoughtful, user focused web experiences.",
   apis: null,
   third_party: [
     {

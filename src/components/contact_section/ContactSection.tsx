@@ -55,8 +55,7 @@ export default function Contact() {
             anim='contact-animate-text'
           />
           <BodyText
-            text="To discuss career & freelance opportunities, contact me directly or
-            fill out the form and I'll get back to you promptly."
+            text="Whether you're hiring or looking to collaborate, feel free to get in touch directly — or fill out the form and I’ll get back to you promptly."
             anim='contact-animate-text'
           />
 

@@ -104,6 +104,10 @@ export default function SkillsSection() {
             text='To support productivity and creativity across both development and design, I regularly use AI tools like ChatGPT, Adobe Firefly and Artistly for ideation, content refinement and generating supporting assets.'
             anim='skills-animate-text'
           />
+          <BodyText
+            text='Here are some of the key skills I bring to the table:'
+            anim='skills-animate-text'
+          />
         </div>
         <div className='lists'>
           <ListGroup

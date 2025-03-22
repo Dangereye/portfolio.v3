@@ -20,7 +20,7 @@ export const theWeather = {
     },
   ],
   description:
-    "Don't get caught off guard by the weather! Check the forecast for your current location easily using Geolocation. Or, if you prefer, you can manually search for weather updates anywhere else. Forecasts are updated hourly and include details on conditions, precipitation, and wind, all presented in a format that suits you. Additionally, enjoy dynamic background imagery provided by Unsplash, which matches current weather conditions - somewhat reliably.",
+    'Don’t get caught off guard by the weather. This app gives you real-time forecasts using geolocation for your current location, or you can search manually for any other city. Forecasts are updated hourly and include key details like conditions, precipitation, and wind — all presented in a clean, user-friendly layout. To add a touch of visual flair, background imagery from Unsplash changes dynamically based on current weather conditions — with mostly reliable results. It’s a simple, stylish way to stay prepared (or daydream about better weather).',
   apis: [
     { name: 'Weather', anchor: 'https://www.weatherapi.com/' },
     { name: 'Unsplash', anchor: 'https://unsplash.com/developers' },

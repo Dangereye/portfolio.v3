@@ -30,7 +30,7 @@ export const starWars = {
     },
   ],
   description:
-    "Ready to embark on an exciting journey to a galaxy far, far away? There's so much to discover and explore, from fascinating people and species to planets, starships, and vehicles from the first seven movies. And to make things even better, I've added some stylised imagery that complements the look and feel of the site, which you won't find anywhere else. So, what are you waiting for? Let's go on an adventure!",
+    'A galaxy far, far away — brought to life through the Star Wars API. This project explores characters, species, planets, starships and vehicles from the first seven films, wrapped in a clean, responsive UI that invites exploration. Unlike many typical “first API” projects, this one goes a step further. Since SWAPI doesn’t provide any imagery, I created a full set of original visuals — from stylised character portraits to starship backdrops — and linked them to the data using a consistent naming structure. The result is a far more immersive experience, blending data with design to create something that feels alive and visually unique. (Movie posters were sourced separately.)',
   apis: [
     { name: 'SWAPI', anchor: 'https://swapi.py4e.com/' },
     {

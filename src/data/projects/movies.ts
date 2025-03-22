@@ -31,7 +31,7 @@ export const movies = {
     },
   ],
   description:
-    "On the lookout for your next binge-watch? Explore millions of movies, television shows, and intriguing personalities with the help of the tmdb API. Browse upcoming releases, rediscover your love for old favourites, and stay up-to-date on the latest trends. Thanks to user-friendly filters, finding what you're looking for is a breeze, from trailers and posters to biographies, ratings, reviews, and more. With a decent variety, you won't run out of excuses to procrastinate. Get ready for a binge-watching experience like no other!",
+    "On the lookout for your next binge-watch? This app taps into the TMDB API to help you explore a huge library of movies, TV shows, and trending personalities. Whether you're after upcoming releases, cult classics or just killing time, you’ll find everything from trailers and posters to cast bios, ratings, reviews and more — all wrapped up in a fast, user-friendly interface. Built with React and TypeScript, the app makes use of dynamic data fetching, smooth scrolling, and responsive layouts. Filtering content is effortless thanks to intuitive controls, and features like YouTube trailer embeds and intersection-based lazy loading make browsing feel seamless.",
   apis: [
     { name: 'TMDB', anchor: 'https://www.themoviedb.org/documentation/api' },
     {

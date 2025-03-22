@@ -30,7 +30,7 @@ export const games = {
     },
   ],
   description:
-    'Embark on an immersive gaming journey with access to an extensive database featuring over 500,000 games across 50 platforms, including mobile. This vast collection is sourced from the RAWG API, providing comprehensive details such as videos, screenshots, descriptions, genres, ESRB ratings, Metacritic scores, and more. Begin your exploration today and uncover your next gaming obsession!',
+    'Discover your next gaming obsession with access to a vast database of over 500,000 titles across 50 platforms, including mobile. Powered by the RAWG API, this app delivers rich details like trailers, screenshots, genres, ESRB ratings, Metacritic scores, and more. Inspired by the rawg.io platform, this version strips things back for a cleaner, more focused experience. With light and dark theme options, a simplified UI, and intuitive filters, it’s designed to help users explore and discover games with ease. All content is compartmentalised to improve navigation, visual clarity and overall usability.',
   apis: [
     { name: 'RAWG', anchor: 'https://rawg.io/apidocs' },
 

@@ -14,6 +14,7 @@ import { environment } from '../../data/skills/environment';
 import { designTools } from '../../data/skills/designTools';
 import { frontEnd } from '../../data/skills/frontEnd';
 import { backEnd } from '../../data/skills/backEnd';
+import { aiAndProductivityTools } from '../../data/skills/aiAndProductivityTools';
 
 export default function SkillsSection() {
   // useAnimation(element id,trigger id,{from options},{to options})
@@ -72,16 +73,17 @@ export default function SkillsSection() {
             anim='skills-animate-text'
           />
           <BodyText
+            text="Building on my journey from development to creative ventures, I've gathered a diverse skill set that spans both front-end and design, along with a foundational understanding of back-end concepts."
+            anim='skills-animate-text'
+          />
+          <BodyText
             text={
               <>
-                Building on my journey from development to creative ventures,
-                I've gathered a diverse skill set that spans both front-end and
-                design, along with a foundational understanding of back-end
-                concepts. My work ranges from simple static sites using HTML,
-                CSS, and vanilla JavaScript to dynamic applications with
-                React.js and Next.js. On the freelance side, I’ve delivered a
-                commissioned WordPress website built with Elementor, along with
-                various graphic design projects (you can view these on my{' '}
+                My work ranges from simple static sites using HTML, CSS, and
+                vanilla JavaScript to dynamic applications with React.js and
+                Next.js. On the freelance side, I’ve delivered a commissioned
+                WordPress website built with Elementor, along with various
+                graphic design projects — some of which you can view on my{' '}
                 <Link
                   to='https://www.behance.net/craig_puxty'
                   rel='noopener noreferrer'
@@ -89,11 +91,17 @@ export default function SkillsSection() {
                 >
                   Behance profile
                 </Link>
-                ). I also have a foundational understanding of back-end concepts
-                like database connections, routing, and schemas. Here are some
-                of the key skills I bring to the table:
+                .
               </>
             }
+            anim='skills-animate-text'
+          />
+          <BodyText
+            text='I also have a foundational understanding of back-end concepts like database connections, routing, and schemas.'
+            anim='skills-animate-text'
+          />
+          <BodyText
+            text='To support productivity and creativity across both development and design, I regularly use AI tools like ChatGPT, Adobe Firefly and Artistly for ideation, content refinement and generating supporting assets.'
             anim='skills-animate-text'
           />
         </div>
@@ -126,6 +134,14 @@ export default function SkillsSection() {
           <ListGroup
             heading={designTools.heading}
             list={designTools.list}
+            listImage='image'
+            renderKey={(item) => item}
+            renderItem={(item) => item}
+            anim='skills-list-item'
+          />
+          <ListGroup
+            heading={aiAndProductivityTools.heading}
+            list={aiAndProductivityTools.list}
             listImage='image'
             renderKey={(item) => item}
             renderItem={(item) => item}

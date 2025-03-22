@@ -1,6 +1,6 @@
-# Portfolio.v3
+![Portfolio Screenshot](assets/portfolio-project-300w.webp)
 
-![Portfolio Screenshot](assets/portfolio-project-500w.webp)
+# Portfolio.v3
 
 A clean, responsive single page application that offers a concise snapshot of who I am, what I do, and how I work. Built to showcase my skills, reflect my journey, and serve as a central hub for potential clients and collaborators.
 

@@ -1,4 +1,4 @@
-![Portfolio Screenshot](assets/portfolio-project-300w.webp)
+![Portfolio Screenshot](assets/portfolio-project-500w.webp)
 
 # Portfolio.v3
 

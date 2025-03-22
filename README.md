@@ -2,6 +2,13 @@
 
 # Portfolio.v3
 
+![React](https://img.shields.io/badge/React-18.2-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue)
+![SCSS](https://img.shields.io/badge/SCSS-1.69.3-cc6699)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cbafc37a-ba9f-4054-86e3-723eba5157fa/deploy-status)](https://app.netlify.com/sites/craigpuxty/deploys)
+![Repo size](https://img.shields.io/github/repo-size/Dangereye/portfolio.v3)
+![Last commit](https://img.shields.io/github/last-commit/Dangereye/portfolio.v3)
+
 A clean, responsive single page application that offers a concise snapshot of who I am, what I do, and how I work. Built to showcase my skills, reflect my journey, and serve as a central hub for potential clients and collaborators.
 
 This project reflects my commitment to writing clean, scalable code and building thoughtful, user focused digital experiences.

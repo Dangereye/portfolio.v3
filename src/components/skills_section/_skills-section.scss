@@ -41,8 +41,16 @@
     @include vert-padding;
     z-index: 2;
 
+    @media (max-width: $mobile) {
+      align-items: flex-start;
+    }
+
     .heading {
       text-align: center;
+
+      @media (max-width: $mobile) {
+        text-align: left;
+      }
     }
 
     .body-text {

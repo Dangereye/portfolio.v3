@@ -1,6 +1,14 @@
-type ButtonProps = {
+type TextButton = {
+  children: string;
+  ariaLabel?: never;
+};
+
+type IconButton = {
   children: React.ReactNode;
-  ariaLabel?: string;
+  ariaLabel: string;
+};
+
+type ButtonProps = (TextButton | IconButton) & {
   variant:
     | 'btn--primary'
     | 'btn--secondary'

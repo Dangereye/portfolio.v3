@@ -20,7 +20,7 @@ export default function Modal() {
       <p className='body-text'>Download curriculum vitae in PDF format?</p>
       <div className='btns'>
         <Button variant='btn--secondary' fnc={closeModal}>
-          <span>Close</span>
+          Close
         </Button>
 
         <a

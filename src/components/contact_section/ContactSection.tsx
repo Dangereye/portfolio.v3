@@ -123,6 +123,7 @@ export default function Contact() {
               variant={formComplete ? 'btn--primary' : 'btn--disabled'}
               disabled={!formComplete}
               fnc={() => {}}
+              ariaLabel='Send message'
             >
               <span>{state.sending ? 'Sending' : 'Send message'}</span>
               {state.sending ? (

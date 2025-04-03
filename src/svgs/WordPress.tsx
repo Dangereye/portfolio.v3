@@ -7,7 +7,7 @@ export default function WordPressSvg() {
         r='243'
         fill='none'
         stroke='#fff'
-        stroke-width='20'
+        strokeWidth='20'
         strokeLinecap='round'
         strokeMiterlimit='10'
       />

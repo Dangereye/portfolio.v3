@@ -55,8 +55,8 @@ export default function useForm() {
 
     emailjs
       .send(
-        'gmail',
-        'portfolio_template',
+        'service_79dl3ne',
+        'template_d6x2qvw',
         {
           name: state.name.value,
           email: state.email.value,
@@ -75,12 +75,35 @@ export default function useForm() {
           resetForm();
         },
         (error) => {
+          console.error('EmailJS error:', error);
+
+          let userMessage = 'Something went wrong. Please try again.';
+
+          switch (error?.status) {
+            case 400:
+              userMessage = 'Invalid request. Please check your form.';
+              break;
+            case 401:
+              userMessage = 'Authorisation error. Please try again later.';
+              break;
+            case 403:
+              userMessage = 'Permission denied. Contact the site owner.';
+              break;
+            case 404:
+              userMessage = 'Service or template not found. Try again later.';
+              break;
+            case 500:
+              userMessage = 'Server error. Please try again in a moment.';
+              break;
+          }
+
           setToast((prev) => ({
             ...prev,
-            message: 'Message failed. Please, try again.',
+            message: userMessage,
             status: 'error',
             is_active: true,
           }));
+
           setState((prev) => ({
             ...prev,
             sending: false,
